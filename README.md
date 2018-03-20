@@ -3,8 +3,8 @@
 This is the twelfth version of kowfm.
 
 To Do
-- [ ] Strip styles
-- [ ] Add Tachyons
+- [x] Strip styles
+- [x] Add Tachyons
 - [ ] Build Grid
 - [ ] Work on Typography
 - [ ] Responsive Typography

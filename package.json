@@ -1,8 +1,8 @@
 {
-    "name": "kowfm v12",
+    "name": "kowfm-v12",
     "description": "The Twelfth version of kowfm, based on Casper.",
     "demo": "https://kow.fm",
-    "version": "0.1",
+    "version": "0.1.0",
     "engines": {
         "ghost": ">=1.19.0"
     },
@@ -49,5 +49,8 @@
     },
     "config": {
         "posts_per_page": 25
+    },
+    "dependencies": {
+        "gulp-concat": "^2.6.1"
     }
 }
