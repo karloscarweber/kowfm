@@ -3,23 +3,24 @@
 This is the twelfth version of kowfm.
 
 To Do
-- [x] Strip styles
-- [x] Add Tachyons
-- [ ] Build Grid
-- [ ] Work on Typography
-- [ ] Responsive Typography
-- [ ] Images
-- [ ] Image Captions
-- [ ] Home Page Layout
-- [ ] Archive Layout
-- [ ] Article Layout
-- [ ] Page Layout
-- [ ] Freelance Page Layout
-- [ ] Footer Layout
-- [ ] Collapsible Menu
-- [ ] Portfolio Page
-- [ ] Responsive Polish
-- [ ] Official Screenshots
+
+* [x] Strip styles
+* [x] Add Tachyons
+* [x] Build Grid
+* [x] Work on Typography
+* [x] Responsive Typography
+* [x] Images
+* [ ] Image Captions
+* [ ] Home Page Layout
+* [ ] Archive Layout
+* [x] Article Layout
+* [x] Page Layout
+* [ ] Freelance Page Layout
+* [ ] Footer Layout
+* [ ] Collapsible Menu
+* [ ] Portfolio Page
+* [ ] Responsive Polish
+* [ ] Official Screenshots
 
 &nbsp;
 
@@ -35,19 +36,18 @@ We've documented our default theme pretty heavily so that it should be fairly ea
 
 **The main files are:**
 
-- `default.hbs` - The main template file
-- `index.hbs` - Used for the home page
-- `post.hbs` - Used for individual posts
-- `page.hbs` - Used for individual pages
-- `tag.hbs` - Used for tag archives
-- `author.hbs` - Used for author archives
+* `default.hbs` - The main template file
+* `index.hbs` - Used for the home page
+* `post.hbs` - Used for individual posts
+* `page.hbs` - Used for individual pages
+* `tag.hbs` - Used for tag archives
+* `author.hbs` - Used for author archives
 
 One really neat trick is that you can also create custom one-off templates just by adding the slug of a page to a template file. For example:
 
-- `page-about.hbs` - Custom template for the `/about/` page
-- `tag-news.hbs` - Custom template for `/tag/news/` archive
-- `author-ali.hbs` - Custom template for `/author/ali/` archive
-
+* `page-about.hbs` - Custom template for the `/about/` page
+* `tag-news.hbs` - Custom template for `/tag/news/` archive
+* `author-ali.hbs` - Custom template for `/author/ali/` archive
 
 # Development
 
@@ -68,17 +68,15 @@ $ gulp zip
 
 # PostCSS Features Used
 
-- Autoprefixer - Don't worry about writing browser prefixes of any kind, it's all done automatically with support for the latest 2 major versions of every browser.
-- Variables - Simple pure CSS variables
-- [Color Function](https://github.com/postcss/postcss-color-function)
-
+* Autoprefixer - Don't worry about writing browser prefixes of any kind, it's all done automatically with support for the latest 2 major versions of every browser.
+* Variables - Simple pure CSS variables
+* [Color Function](https://github.com/postcss/postcss-color-function)
 
 # SVG Icons
 
 Casper uses inline SVG icons, included via Handlebars partials. You can find all icons inside `/partials/icons`. To use an icon just include the name of the relevant file, eg. To include the SVG icon in `/partials/icons/rss.hbs` - use `{{> "icons/rss"}}`.
 
 You can add your own SVG icons in the same manner.
-
 
 # Copyright & License
 

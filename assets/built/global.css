@@ -83,9 +83,12 @@ to each other and flow around one another. Most of the Layout rules will happen 
   font-family: "ManifoldCF";
   font-weight: 400;
   color: #1b1b1b;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
 }
 html {
   background-color: #eef3f4;
+  /*background-color: white;*/
 }
 .site-wrapper {
   width: 100%;
@@ -112,6 +115,7 @@ html {
   right: 0;
 }
 
+.article-header .text-block p,
 .article-header .text-block span,
 .article-header .text-block h1 {
   float: none;
@@ -129,14 +133,19 @@ html {
   /*float: right;*/
   position: relative;
   width: 100%;
-  max-width: calc(50% - 60px);
+  max-width: 50%;
 }
 
 .article-header p,
 .article-header h1,
 .article-header span {
-  margin-left: 60px;
+  /*margin-left: 60px;*/
   float: right;
+}
+
+.article-header p {
+  font-size: 1.25rem;
+  line-height: 2rem;
 }
 
 /* TYPOGRAPHY AND SIZING AND STUFF */
@@ -165,12 +174,67 @@ html {
   width: 100%;
   max-width: 50%;
   float: left;
+  margin-bottom: 2rem;
+}
+
+/*
+  Blocked Links
+*/
+.image-link {
+  border: none;
+}
+.content-link {
+  text-decoration: none;
+}
+
+/*
+  post-Card Stuff
+*/
+.post-card {
+  margin-bottom: 6rem;
+}
+
+/*
+  Type Stuff
+*/
+.article-header {
+  margin-bottom: 2rem;
 }
 
 .type-block p,
 .type-block ul,
 .type-block ol,
-.type-block blockquote {
+.type-block blockquote,
+.type-block h1,
+.type-block h2,
+.type-block h3,
+.type-block h4,
+.type-block h5,
+.type-block h6 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.type-block > p,
+.type-block > ul,
+.type-block > ol,
+.type-block > blockquote,
+.type-block > h1,
+.type-block > h2,
+.type-block > h3,
+.type-block > h4,
+.type-block > h5,
+.type-block > h6,
+.kg-card-markdown > p,
+.kg-card-markdown > ul,
+.kg-card-markdown > ol,
+.kg-card-markdown > blockquote,
+.kg-card-markdown > h1,
+.kg-card-markdown > h2,
+.kg-card-markdown > h3,
+.kg-card-markdown > h4,
+.kg-card-markdown > h5,
+.kg-card-markdown > h6 {
   margin-left: calc(50% + 60px);
 }
 
@@ -180,8 +244,116 @@ html {
   clear: both;
 }
 
+hr {
+  border: 2px solid #1b1b1b;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+/*
+  Navigation
+*/
+.site-header {
+  margin-bottom: 2rem;
+  clear: both;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+ul.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul.nav li {
+  display: inline-block;
+  float: left;
+  /*margin-right: 1rem;*/
+  margin-left: 2rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+ul.nav li a {
+  text-decoration: none;
+}
+ul.nav li a:hover {
+  text-decoration: underline;
+}
+.site-logo {
+  max-height: 40px;
+  float: right;
+  margin-right: 2rem;
+}
+
+/*
+  subscribe-form
+*/
+.subscribe-form {
+  width: calc(100% - 1rem);
+  margin-left: 0.5rem;
+  padding: 1.5rem;
+  border: 4px solid #eef3f4;
+  background-color: #1b1b1b;
+  width: calc(50% - 60px);
+  float: right;
+  clear: both;
+  position: inline-block;
+  display: block;
+}
+.subscribe-form * {
+  color: white;
+}
+.subscribe-form .form-group input {
+  width: 100%;
+  border: none;
+  padding: 3px 10px;
+  font-size: 18px;
+  line-height: 24px;
+  height: 36px;
+  margin-bottom: 1rem;
+  color: black;
+  font-family: "ManifoldCF";
+  font-weight: 500;
+  color: #1b1b1b;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.subscribe-form button {
+  margin: 1rem auto 2rem;
+  display: block;
+  padding: 5px 20px;
+  color: #1b1b1b;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.subscribe-form button:hover {
+  text-decoration: underline;
+}
+.subscribe-form button span {
+  color: #1b1b1b;
+}
+
+/*
+  .footer
+*/
+
+/* Middling */
+@media screen and (max-width: 1100px) {
+}
+
 /* small */
 @media screen and (max-width: 700px) {
+  .post-card {
+    margin-bottom: 4rem;
+  }
+
   .article-header .text-block,
   .text-block,
   .type-block {
@@ -190,18 +362,35 @@ html {
     margin: 0px auto;
   }
 
-  .type-block img,
+  .subscribe-form {
+    width: calc(100% - 4rem);
+    float: none;
+    margin: 0px auto;
+  }
+
+  .type-block img {
+    float: none;
+    margin-left: 0rem;
+    max-width: 100%;
+  }
+
   .article-header img {
     float: none;
-    max-width: 100%;
-    margin-left: 1rem;
-    max-width: 100%;
+    margin-left: 2rem;
+    max-width: calc(100% - 4rem);
+    margin-bottom: 2rem;
   }
 
   .type-block p,
   .type-block ul,
   .type-block ol,
-  .type-block blockquote {
+  .type-block blockquote,
+  .type-block h1,
+  .type-block h2,
+  .type-block h3,
+  .type-block h4,
+  .type-block h5,
+  .type-block h6 {
     margin-left: 0px;
   }
 }
