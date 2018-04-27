@@ -22,6 +22,10 @@ To Do
 * [ ] Responsive Polish
 * [ ] Official Screenshots
 
+## Building the CSS
+
+So we're using Gulp start it by using Gulp. type `gulp default` into your console in the root after it's installed and you should be good for development.
+
 &nbsp;
 
 ![screenshot-desktop](https://user-images.githubusercontent.com/120485/27221326-1e31d326-5280-11e7-866d-82d550a7683b.jpg)
