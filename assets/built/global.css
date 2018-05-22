@@ -75,6 +75,23 @@
   font-style: italic;
 }
 
+/* Colors */
+.kow-red,
+a.kow-red,
+.type-block a.kow-red {
+  color: #ff0035;
+}
+.kow-green,
+a.kow-green,
+.type-block a.kow-green {
+  color: #04aa56;
+}
+.kow-pink,
+a.kow-pink,
+.type-block a.kow-pink {
+  color: #ff008d;
+}
+
 /* Grid stuff */
 
 /* Type blocks are areas where images and paragraphs interact, they sit next
@@ -169,7 +186,20 @@ from ruining the design. */
 
 .type-block h1 {
   font-size: 6rem; /* .headline */
+  line-height: 6rem;
   font-weight: 600;
+}
+
+.type-block h2 {
+  font-size: 4rem; /* .headline */
+  line-height: 4rem;
+  font-weight: 600;
+}
+
+.type-block h3 {
+  font-size: 2rem; /* .headline */
+  line-height: 2rem;
+  font-weight: 500;
 }
 
 .type-block .kg-card-markdown > p:first-child {
@@ -211,6 +241,11 @@ from ruining the design. */
   margin-bottom: 2rem;
 }
 
+/* some brief link stuff */
+a:hover {
+  text-decoration:none;
+}
+
 .type-block p,
 .type-block ul,
 .type-block ol,
@@ -222,7 +257,7 @@ from ruining the design. */
 .type-block h5,
 .type-block h6 {
   margin-top: 0;
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
 }
 
 .type-block > p,
@@ -235,6 +270,8 @@ from ruining the design. */
 .type-block > h4,
 .type-block > h5,
 .type-block > h6,
+.type-block pre,
+.type-block div.gist,
 .kg-card-markdown > p,
 .kg-card-markdown > ul,
 .kg-card-markdown > ol,
@@ -244,7 +281,10 @@ from ruining the design. */
 .kg-card-markdown > h3,
 .kg-card-markdown > h4,
 .kg-card-markdown > h5,
-.kg-card-markdown > h6 {
+.kg-card-markdown > h6,
+.kg-card-markdown pre,
+.kg-card-markdown div.gist,
+.footnotes {
   margin-left: calc(50% + 60px);
 }
 
@@ -252,6 +292,18 @@ from ruining the design. */
   content: "";
   display: block;
   clear: both;
+}
+
+.type-block a,
+.kg-card-markdown a {
+  color: #198eff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.type-block a:hover,
+.kg-card-markdown a:hover {
+  text-decoration: underline;
 }
 
 hr {
@@ -271,12 +323,13 @@ hr {
   display: inline-block;
   width: 100%;
 }
-ul.nav {
+.header-navigation ul.nav,
+.type-block ul.nav {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-ul.nav li {
+.header-navigation ul.nav li {
   display: inline-block;
   float: left;
   /*margin-right: 1rem;*/
@@ -286,12 +339,19 @@ ul.nav li {
   font-weight: 500;
   text-transform: uppercase;
 }
-ul.nav li a {
+.type-block ul.nav li {
+  margin-left: calc(50% + 60px);
+  font-weight: 500;
+}
+.header-navigation ul.nav li a,
+.type-block ul.nav li a {
   text-decoration: none;
 }
-ul.nav li a:hover {
+.header-navigation ul.nav li a:hover,
+.type-block ul.nav li a:hover {
   text-decoration: underline;
 }
+
 .site-logo {
   max-height: 40px;
   float: right;
@@ -352,8 +412,31 @@ ul.nav li a:hover {
 }
 
 /*
+  .pagination
+*/
+.pagination {
+  display: block;
+  margin: 2rem auto;
+  width: 100%;
+  text-align: center;
+}
+
+/*
   .footer
 */
+.site-footer {
+  display: block;
+  width: 100%;
+  background: black;
+  padding: 2rem;
+}
+
+.site-footer p,
+.site-footer h1,
+.site-footer h2,
+.site-footer h3 {
+  color: white;
+}
 
 /* Middling */
 @media screen and (max-width: 1100px) {
@@ -365,12 +448,19 @@ ul.nav li a:hover {
     margin-bottom: 4rem;
   }
 
+  .article-header {
+    max-height: none; /* We may need this again. */
+  }
+
   .article-header .text-block,
   .text-block,
   .type-block {
     position: relative;
     width: calc(100% - 4rem);
     margin: 0px auto;
+  }
+  .pagination {
+    margin: 2rem auto;
   }
 
   .post-full .article-header .text-block {
@@ -406,7 +496,32 @@ ul.nav li a:hover {
   .type-block h4,
   .type-block h5,
   .type-block h6,
-  .type-block hr {
+  .type-block hr,
+  .type-block pre,
+  .type-block div.gist,
+  .type-block ul.nav li {
+    margin-left: 0px;
+  }
+}
+
+/*
+  Utility Classes
+  To begin moving towards low specificity classes to control the layout I'll add
+  utility classes that can be used to replicate these behaviours.
+*/
+
+/*
+  Sorted Type
+  All content Type hugs the right of the screen except on mobile.
+  These classes let that be a reality for any element.
+ */
+.sorted-type,
+.sr {
+  margin-left: calc(50% + 60px);
+}
+@media screen and (max-width: 700px) {
+  .sorted-type,
+  .sr {
     margin-left: 0px;
   }
 }

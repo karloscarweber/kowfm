@@ -1,56 +1,51 @@
 {
-    "name": "kowfm-v12",
-    "description": "The Twelfth version of kowfm, based on Casper.",
-    "demo": "https://kow.fm",
-    "version": "0.1.0",
-    "engines": {
-        "ghost": ">=1.19.0"
-    },
-    "license": "MIT",
-    "screenshots": {
-        "desktop": "assets/screenshot-desktop.jpg",
-        "mobile": "assets/screenshot-mobile.jpg"
-    },
-    "author": {
-        "name": "Karl Oscar Weber",
-        "email": "me@kow.fm",
-        "url": "https://kow.fm"
-    },
-    "gpm": {
-        "type": "theme",
-        "categories": [
-            "Custom"
-        ]
-    },
-    "keywords": [
-        "ghost",
-        "theme"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/karloscarweber/kowfm.git"
-    },
-    "bugs": "https://github.com/karloscarweber/kowfm/issues",
-    "contributors": "https://github.com/karloscarweber/kowfm/graphs/contributors",
-    "devDependencies": {
-        "autoprefixer": "6.3.6",
-        "cssnano": "3.7.1",
-        "gulp": "3.9.1",
-        "gulp-livereload": "3.8.1",
-        "gulp-nodemon": "2.1.0",
-        "gulp-postcss": "6.1.1",
-        "gulp-sourcemaps": "1.6.0",
-        "gulp-util": "3.0.7",
-        "gulp-watch": "4.3.8",
-        "gulp-zip": "4.0.0",
-        "postcss-color-function": "2.0.1",
-        "postcss-custom-properties": "5.0.1",
-        "postcss-easy-import": "1.0.1"
-    },
-    "config": {
-        "posts_per_page": 25
-    },
-    "dependencies": {
-        "gulp-concat": "^2.6.1"
-    }
+  "name": "kowfm-v12",
+  "description": "The Twelfth version of kowfm, based on Casper.",
+  "demo": "https://kow.fm",
+  "version": "0.1.0",
+  "engines": {
+    "ghost": ">=1.19.0"
+  },
+  "license": "MIT",
+  "screenshots": {
+    "desktop": "assets/screenshot-desktop.jpg",
+    "mobile": "assets/screenshot-mobile.jpg"
+  },
+  "author": {
+    "name": "Karl Oscar Weber",
+    "email": "me@kow.fm",
+    "url": "https://kow.fm"
+  },
+  "gpm": {
+    "type": "theme",
+    "categories": ["Custom"]
+  },
+  "keywords": ["ghost", "theme"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/karloscarweber/kowfm.git"
+  },
+  "bugs": "https://github.com/karloscarweber/kowfm/issues",
+  "contributors": "https://github.com/karloscarweber/kowfm/graphs/contributors",
+  "devDependencies": {
+    "autoprefixer": "6.3.6",
+    "cssnano": "3.7.1",
+    "gulp": "3.9.1",
+    "gulp-livereload": "3.8.1",
+    "gulp-nodemon": "2.1.0",
+    "gulp-postcss": "6.1.1",
+    "gulp-sourcemaps": "1.6.0",
+    "gulp-util": "3.0.7",
+    "gulp-watch": "4.3.8",
+    "gulp-zip": "4.0.0",
+    "postcss-color-function": "2.0.1",
+    "postcss-custom-properties": "5.0.1",
+    "postcss-easy-import": "1.0.1"
+  },
+  "config": {
+    "posts_per_page": 6
+  },
+  "dependencies": {
+    "gulp-concat": "^2.6.1"
+  }
 }

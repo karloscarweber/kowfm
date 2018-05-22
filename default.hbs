@@ -30,17 +30,26 @@
         {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
         {{{body}}}
 
-        {{!-- The footer at the very bottom of the screen --}}
-        <footer class="site-footer outer">
-          <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
-          <nav class="site-footer-nav">
-              <a href="{{@blog.url}}">Latest Posts</a>
-              {{#if @blog.twitter}}<a href="{{twitter_url @blog.twitter}}" target="_blank" rel="noopener">Twitter</a>{{/if}}
-              <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
-          </nav>
-        </footer>
-
     </div>
+
+    {{!-- The footer at the very bottom of the screen --}}
+    <footer class="site-footer outer">
+      <div class="type-block">
+        <h3>About</h3>
+        <p>{{@blog.description}}</p>
+
+        <h3>Links</h3>
+        <p style="margin-bottom:0;"><a href="{{@blog.url}}">Articles</a></p>
+        {{#if @blog.navigation}}
+            {{navigation}}
+        {{/if}}
+        <br>
+
+        <p class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</p>
+        <p>Proudly Powered by <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a></p>
+        {{#if @blog.twitter}}<p><a href="{{twitter_url @blog.twitter}}" target="_blank" rel="noopener">Twitter</a></p>{{/if}}
+      </div>
+    </footer>
 
     {{!-- jQuery + Fitvids, which makes all video embeds responsive --}}
     <script
@@ -49,13 +58,6 @@
         crossorigin="anonymous">
     </script>
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
-
-    {{#if pagination.pages}}
-    <script>
-        var maxPages = parseInt('{{pagination.pages}}');
-    </script>
-    <script src="{{asset "js/infinitescroll.js"}}"></script>
-    {{/if}}
 
     {{!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. --}}
     {{{block "scripts"}}}

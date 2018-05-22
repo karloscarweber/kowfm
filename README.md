@@ -10,17 +10,22 @@ To Do
 * [x] Work on Typography
 * [x] Responsive Typography
 * [x] Images
-* [ ] Image Captions
-* [ ] Home Page Layout
-* [ ] Archive Layout
+* [ ] Image Captions - Later
+* [x] Home Page Layout
+* [x] Archive Layout
 * [x] Article Layout
 * [x] Page Layout
-* [ ] Freelance Page Layout
-* [ ] Footer Layout
-* [ ] Collapsible Menu
+* [x] Freelance Page Layout
+* [x] Footer Layout
+* [ ] Collapsible Menu - abandonded
 * [ ] Portfolio Page
-* [ ] Responsive Polish
+* [x] Responsive Polish
 * [ ] Official Screenshots
+* [ ] SVG Social icons
+* [ ] Tachyons refactor (refactor styles to be utility class based)
+* [ ] Rewrite Gulp config to make it easier for others to use the Theme
+* [ ] Rewrite Readme to reflect the actual theme
+* [ ] Light/Dark Theme
 
 ## Building the CSS
 

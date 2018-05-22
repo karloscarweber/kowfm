@@ -1,0 +1,52 @@
+{{!< default}}
+{{!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template --}}
+
+{{!-- The big featured header, it uses blog cover image as a BG if available --}}
+<header class="site-header outer">
+  {{> "site-nav"}}
+</header>
+
+{{!-- The main content area --}}
+<main id="site-main" class="site-main outer" role="main">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="ph4">
+    <h1 class="sr f1 lh-copy f1-m lh-copy-m fw6">I Make Apps and Websites</h1>
+    <p class="sr f4 fw5"><a href="/freelance" class="kow-green">I Freelance for ambitous folks</a>.</p>
+    <p class="sr f4 fw5">I also <a href="https://kow.fm/" class="kow-red">write</a>, <br>
+make <a href="https://instagram.com/karloscarweber" class="kow-green">art</a>, <br>
+<a href="https://dribbble.com/karloscarweber" class="kow-pink">design</a>, <br>
+make music, <br>
+and ride a bike.</p>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  {{#foreach posts}}
+
+      {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
+      {{> "post-card"}}
+
+  {{/foreach}}
+
+  {{pagination}}
+
+</main>
