@@ -390,6 +390,9 @@
 
 @media (min-width: 37.5em) and (max-width: 60em) {.vertibar {top:20%}} /* -m */
 @media (min-width: 60em) {.vertibar {top:0%}} /* -l */
+.vertibar.mainvertibar {top: 650px}
+@media (min-width: 37.5em) and (max-width: 60em) {.vertibar.mainvertibar {top:350px}} /* -m */
+@media (min-width: 60em) {.vertibar.mainvertibar {top:0%}} /* -l */
 .offset500, .vertibar.offset500 {top:500px;}
 .offset1000, .vertibar.offset1000 {top:1000px;}
 .offset1500, .vertibar.offset1500 {top:1500px;}
