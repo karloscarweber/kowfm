@@ -1,4 +1,4 @@
-{"version":3,"names":[],"mappings":"","sources":["global.css"],"sourcesContent":["/* Font Stuff */\n/*\n  400 regular\n  500 demi-bold\n  600 bold\n*/\n@font-face {\n  font-family: \"ManifoldCF\";\n  src: url(\"/assets/fonts/manifold/ManifoldCF-Regular.eot\"); /* IE9 Compat Mode */\n  src: url(\"/assets/fonts/manifold/ManifoldCF-Regular.eot?#iefix\")\n      format(\"embedded-opentype\"),\n    url(\"/assets/fonts/manifold/ManifoldCF-Regular.woff2\") format(\"woff2\"),\n    url(\"/assets/fonts/manifold/ManifoldCF-Regular.woff\") format(\"woff\"),\n    url(\"/assets/fonts/manifold/ManifoldCF-Regular.ttf\") format(\"truetype\"); /* Safari, Android, iOS */\n  font-weight: 400;\n  font-style: normal;\n}\n@font-face {\n  font-family: \"ManifoldCF\";\n  src: url(\"/assets/fonts/manifold/ManifoldCF-RegularOblique.eot\"); /* IE9 Compat Mode */\n  src: url(\"/assets/fonts/manifold/ManifoldCF-RegularOblique.eot?#iefix\")\n      format(\"embedded-opentype\"),\n    url(\"/assets/fonts/manifold/ManifoldCF-RegularOblique.woff2\")\n      format(\"woff2\"),\n    url(\"/assets/fonts/manifold/ManifoldCF-RegularOblique.woff\") format(\"woff\"),\n    url(\"/assets/fonts/manifold/ManifoldCF-RegularOblique.ttf\")\n      format(\"truetype\"); /* Safari, Android, iOS */\n  font-weight: 400;\n  font-style: italic;\n}\n@font-face {\n  font-family: \"ManifoldCF\";\n  src: url(\"/assets/fonts/manifold/ManifoldCF-DemiBold.eot\"); /* IE9 Compat Mode */\n  src: url(\"/assets/fonts/manifold/ManifoldCF-DemiBold.eot?#iefix\")\n      format(\"embedded-opentype\"),\n    url(\"/assets/fonts/manifold/ManifoldCF-DemiBold.woff2\") format(\"woff2\"),\n    url(\"/assets/fonts/manifold/ManifoldCF-DemiBold.woff\") format(\"woff\"),\n    url(\"/assets/fonts/manifold/ManifoldCF-DemiBold.ttf\") format(\"truetype\"); /* Safari, Android, iOS */\n  font-weight: 500;\n  font-style: normal;\n}\n@font-face {\n  font-family: \"ManifoldCF\";\n  src: url(\"/assets/fonts/manifold/ManifoldCF-DemiBoldOblique.eot\"); /* IE9 Compat Mode */\n  src: url(\"/assets/fonts/manifold/ManifoldCF-DemiBoldOblique.eot?#iefix\")\n      format(\"embedded-opentype\"),\n    url(\"/assets/fonts/manifold/ManifoldCF-DemiBoldOblique.woff2\")\n      format(\"woff2\"),\n    url(\"/assets/fonts/manifold/ManifoldCF-DemiBoldOblique.woff\") format(\"woff\"),\n    url(\"/assets/fonts/manifold/ManifoldCF-DemiBoldOblique.ttf\")\n      format(\"truetype\"); /* Safari, Android, iOS */\n  font-weight: 500;\n  font-style: italic;\n}\n@font-face {\n  font-family: \"ManifoldCF\";\n  src: url(\"/assets/fonts/manifold/ManifoldCF-Bold.eot\"); /* IE9 Compat Mode */\n  src: url(\"/assets/fonts/manifold/ManifoldCF-Bold.eot?#iefix\")\n      format(\"embedded-opentype\"),\n    url(\"/assets/fonts/manifold/ManifoldCF-Bold.woff2\") format(\"woff2\"),\n    url(\"/assets/fonts/manifold/ManifoldCF-Bold.woff\") format(\"woff\"),\n    url(\"/assets/fonts/manifold/ManifoldCF-Bold.ttf\") format(\"truetype\"); /* Safari, Android, iOS */\n  font-weight: 600;\n  font-style: normal;\n}\n@font-face {\n  font-family: \"ManifoldCF\";\n  src: url(\"/assets/fonts/manifold/ManifoldCF-BoldOblique.eot\"); /* IE9 Compat Mode */\n  src: url(\"/assets/fonts/manifold/ManifoldCF-BoldOblique.eot?#iefix\")\n      format(\"embedded-opentype\"),\n    url(\"/assets/fonts/manifold/ManifoldCF-BoldOblique.woff2\") format(\"woff2\"),\n    url(\"/assets/fonts/manifold/ManifoldCF-BoldOblique.woff\") format(\"woff\"),\n    url(\"/assets/fonts/manifold/ManifoldCF-BoldOblique.ttf\") format(\"truetype\"); /* Safari, Android, iOS */\n  font-weight: 600;\n  font-style: italic;\n}\n\n/* Colors */\n.kow-red,\na.kow-red,\n.type-block a.kow-red {\n  color: #ff0035;\n}\n.kow-green,\na.kow-green,\n.type-block a.kow-green {\n  color: #04aa56;\n}\n.kow-pink,\na.kow-pink,\n.type-block a.kow-pink {\n  color: #ff008d;\n}\n\n/* Grid stuff */\n\n/* Type blocks are areas where images and paragraphs interact, they sit next\nto each other and flow around one another. Most of the Layout rules will happen here. */\n* {\n  font-family: \"ManifoldCF\";\n  font-weight: 400;\n  color: #1b1b1b;\n  -webkit-font-smoothing: antialiased;\n  font-smoothing: antialiased;\n}\nhtml {\n  background-color: #eef3f4;\n  /*background-color: white;*/\n}\n.site-wrapper {\n  width: 100%;\n  max-width: 1240px;\n  margin: auto;\n  padding-top: 20px;\n}\n\n/* Article Header */\n.article-header {\n  display: block;\n  clear: both;\n  position: relative;\n  height: calc(50% - 60px);\n  max-height: 590px; /* We may need this again. */\n  min-height: 250px;\n  /*background-color:blue;*/\n}\n\n.article-header .text-block {\n  display: block;\n  position: absolute;\n  width: calc(50% - 60px);\n  bottom: 0;\n  right: 0;\n}\n\n.article-header .text-block p,\n.article-header .text-block span,\n.article-header .text-block h1 {\n  float: none;\n  text-align: left;\n  margin: 0;\n  margin-bottom: 0;\n}\n\n.article-header .text-block h1 {\n  font-weight: 600;\n}\n\n.article-header img {\n  display: block;\n  position: relative;\n  width: 100%;\n  max-width: 50%;\n}\n\n.article-header p,\n.article-header h1,\n.article-header span {\n  /*margin-left: 60px;*/\n  float: right;\n}\n\n.article-header p {\n  font-size: 1.25rem;\n  line-height: 2rem;\n}\n\n/*  This is that edge case on actual post pages that should prevent giant headlines\nfrom ruining the design. */\n.post-full .article-header .text-block {\n  position: relative;\n  float: right;\n}\n.post-full .article-header img {\n  float: left;\n}\n\n/* TYPOGRAPHY AND SIZING AND STUFF */\n.type-block {\n  font-size: 1.25rem; /* .f4 */\n  line-height: 2rem;\n  display: block;\n  position: relative;\n  clear: both;\n}\n\n.type-block h1 {\n  font-size: 6rem; /* .headline */\n  line-height: 6rem;\n  font-weight: 600;\n}\n\n.type-block h2 {\n  font-size: 4rem; /* .headline */\n  line-height: 4rem;\n  font-weight: 600;\n}\n\n.type-block h3 {\n  font-size: 2rem; /* .headline */\n  line-height: 2rem;\n  font-weight: 500;\n}\n\n.type-block .kg-card-markdown > p:first-child {\n  font-size: 2.25rem; /* .f2 */\n  line-height: 2.5rem;\n  font-weight: 500;\n}\n\n.type-block img {\n  display: block;\n  position: relative;\n  width: 100%;\n  max-width: 50%;\n  float: left;\n  margin-bottom: 2rem;\n}\n\n/*\n  Blocked Links\n*/\n.image-link {\n  border: none;\n}\n.content-link {\n  text-decoration: none;\n}\n\n/*\n  post-Card Stuff\n*/\n.post-card {\n  margin-bottom: 6rem;\n}\n\n/*\n  Type Stuff\n*/\n.article-header {\n  margin-bottom: 2rem;\n}\n\n/* some brief link stuff */\na:hover {\n  text-decoration:none;\n}\n\n.type-block p,\n.type-block ul,\n.type-block ol,\n.type-block blockquote,\n.type-block h1,\n.type-block h2,\n.type-block h3,\n.type-block h4,\n.type-block h5,\n.type-block h6 {\n  margin-top: 0;\n  margin-bottom: 3rem;\n}\n\n.type-block > p,\n.type-block > ul,\n.type-block > ol,\n.type-block > blockquote,\n.type-block > h1,\n.type-block > h2,\n.type-block > h3,\n.type-block > h4,\n.type-block > h5,\n.type-block > h6,\n.type-block pre,\n.type-block div.gist,\n.kg-card-markdown > p,\n.kg-card-markdown > ul,\n.kg-card-markdown > ol,\n.kg-card-markdown > blockquote,\n.kg-card-markdown > h1,\n.kg-card-markdown > h2,\n.kg-card-markdown > h3,\n.kg-card-markdown > h4,\n.kg-card-markdown > h5,\n.kg-card-markdown > h6,\n.kg-card-markdown pre,\n.kg-card-markdown div.gist,\n.footnotes {\n  margin-left: calc(50% + 60px);\n}\n\n.type-block img + p:after {\n  content: \"\";\n  display: block;\n  clear: both;\n}\n\n.type-block a,\n.kg-card-markdown a {\n  color: #198eff;\n  font-weight: 600;\n  text-decoration: none;\n}\n\n.type-block a:hover,\n.kg-card-markdown a:hover {\n  text-decoration: underline;\n}\n\nhr {\n  border: 2px solid #1b1b1b;\n  margin-bottom: 3rem;\n  margin-top: 3rem;\n  margin-left: calc(50% + 60px);\n}\n\n/*\n  Navigation\n*/\n.site-header {\n  margin-bottom: 2rem;\n  clear: both;\n  position: relative;\n  display: inline-block;\n  width: 100%;\n}\n.header-navigation ul.nav,\n.type-block ul.nav {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n.header-navigation ul.nav li {\n  display: inline-block;\n  float: left;\n  /*margin-right: 1rem;*/\n  margin-left: 2rem;\n  font-size: 1.5rem;\n  line-height: 2rem;\n  font-weight: 500;\n  text-transform: uppercase;\n}\n.type-block ul.nav li {\n  margin-left: calc(50% + 60px);\n  font-weight: 500;\n}\n.header-navigation ul.nav li a,\n.type-block ul.nav li a {\n  text-decoration: none;\n}\n.header-navigation ul.nav li a:hover,\n.type-block ul.nav li a:hover {\n  text-decoration: underline;\n}\n\n.site-logo {\n  max-height: 40px;\n  float: right;\n  margin-right: 2rem;\n}\n\n/*\n  subscribe-form\n*/\n.subscribe-form {\n  width: calc(100% - 1rem);\n  margin-left: 0.5rem;\n  padding: 1.5rem;\n  border: 4px solid #eef3f4;\n  background-color: #1b1b1b;\n  width: calc(50% - 60px);\n  float: right;\n  clear: both;\n  position: inline-block;\n  display: block;\n}\n.subscribe-form * {\n  color: white;\n}\n.subscribe-form .form-group input {\n  width: 100%;\n  border: none;\n  padding: 3px 10px;\n  font-size: 18px;\n  line-height: 24px;\n  height: 36px;\n  margin-bottom: 1rem;\n  color: black;\n  font-family: \"ManifoldCF\";\n  font-weight: 500;\n  color: #1b1b1b;\n  -webkit-font-smoothing: antialiased;\n  font-smoothing: antialiased;\n}\n\n.subscribe-form button {\n  margin: 1rem auto 2rem;\n  display: block;\n  padding: 5px 20px;\n  color: #1b1b1b;\n  background-color: white;\n  border: none;\n  cursor: pointer;\n  font-size: 1.5rem;\n  font-weight: 600;\n  text-transform: uppercase;\n}\n.subscribe-form button:hover {\n  text-decoration: underline;\n}\n.subscribe-form button span {\n  color: #1b1b1b;\n}\n\n/*\n  .pagination\n*/\n.pagination {\n  display: block;\n  margin: 2rem auto;\n  width: 100%;\n  text-align: center;\n}\n\n/*\n  .footer\n*/\n.site-footer {\n  display: block;\n  width: 100%;\n  background: black;\n  padding: 2rem;\n}\n\n.site-footer p,\n.site-footer h1,\n.site-footer h2,\n.site-footer h3 {\n  color: white;\n}\n\n/* Middling */\n@media screen and (max-width: 1100px) {\n}\n\n/* small */\n@media screen and (max-width: 700px) {\n  .post-card {\n    margin-bottom: 4rem;\n  }\n\n  .article-header {\n    max-height: none; /* We may need this again. */\n  }\n\n  .article-header .text-block,\n  .text-block,\n  .type-block {\n    position: relative;\n    width: calc(100% - 4rem);\n    margin: 0px auto;\n  }\n  .pagination {\n    margin: 2rem auto;\n  }\n\n  .post-full .article-header .text-block {\n    float: none;\n  }\n\n  .subscribe-form {\n    width: calc(100% - 4rem);\n    float: none;\n    margin: 0px auto;\n  }\n\n  .type-block img {\n    float: none;\n    margin-left: 0rem;\n    max-width: 100%;\n  }\n\n  .article-header img {\n    float: none;\n    margin-left: 2rem;\n    max-width: calc(100% - 4rem);\n    margin-bottom: 2rem;\n  }\n\n  .type-block p,\n  .type-block ul,\n  .type-block ol,\n  .type-block blockquote,\n  .type-block h1,\n  .type-block h2,\n  .type-block h3,\n  .type-block h4,\n  .type-block h5,\n  .type-block h6,\n  .type-block hr,\n  .type-block pre,\n  .type-block div.gist,\n  .type-block ul.nav li {\n    margin-left: 0px;\n  }\n}\n\n/*\n  Utility Classes\n  To begin moving towards low specificity classes to control the layout I'll add\n  utility classes that can be used to replicate these behaviours.\n*/\n\n/*\n  Sorted Type\n  All content Type hugs the right of the screen except on mobile.\n  These classes let that be a reality for any element.\n */\n.sorted-type,\n.sr {\n  margin-left: calc(50% + 60px);\n}\n@media screen and (max-width: 700px) {\n  .sorted-type,\n  .sr {\n    margin-left: 0px;\n  }\n}\n"],"file":"global.css","sourceRoot":"/source/"}
+{"version":3,"names":[],"mappings":"","sources":["global.css"],"sourcesContent":["/* Font Stuff */\n/*\n  400 regular\n  500 demi-bold\n  600 bold\n*/\n@font-face {\n  font-family: \"ManifoldCF\";\n  src: url(\"/assets/fonts/manifold/ManifoldCF-Regular.eot\"); /* IE9 Compat Mode */\n  src: url(\"/assets/fonts/manifold/ManifoldCF-Regular.eot?#iefix\")\n      format(\"embedded-opentype\"),\n    url(\"/assets/fonts/manifold/ManifoldCF-Regular.woff2\") format(\"woff2\"),\n    url(\"/assets/fonts/manifold/ManifoldCF-Regular.woff\") format(\"woff\"),\n    url(\"/assets/fonts/manifold/ManifoldCF-Regular.ttf\") format(\"truetype\"); /* Safari, Android, iOS */\n  font-weight: 400;\n  font-style: normal;\n}\n@font-face {\n  font-family: \"ManifoldCF\";\n  src: url(\"/assets/fonts/manifold/ManifoldCF-RegularOblique.eot\"); /* IE9 Compat Mode */\n  src: url(\"/assets/fonts/manifold/ManifoldCF-RegularOblique.eot?#iefix\")\n      format(\"embedded-opentype\"),\n    url(\"/assets/fonts/manifold/ManifoldCF-RegularOblique.woff2\")\n      format(\"woff2\"),\n    url(\"/assets/fonts/manifold/ManifoldCF-RegularOblique.woff\") format(\"woff\"),\n    url(\"/assets/fonts/manifold/ManifoldCF-RegularOblique.ttf\")\n      format(\"truetype\"); /* Safari, Android, iOS */\n  font-weight: 400;\n  font-style: italic;\n}\n@font-face {\n  font-family: \"ManifoldCF\";\n  src: url(\"/assets/fonts/manifold/ManifoldCF-DemiBold.eot\"); /* IE9 Compat Mode */\n  src: url(\"/assets/fonts/manifold/ManifoldCF-DemiBold.eot?#iefix\")\n      format(\"embedded-opentype\"),\n    url(\"/assets/fonts/manifold/ManifoldCF-DemiBold.woff2\") format(\"woff2\"),\n    url(\"/assets/fonts/manifold/ManifoldCF-DemiBold.woff\") format(\"woff\"),\n    url(\"/assets/fonts/manifold/ManifoldCF-DemiBold.ttf\") format(\"truetype\"); /* Safari, Android, iOS */\n  font-weight: 500;\n  font-style: normal;\n}\n@font-face {\n  font-family: \"ManifoldCF\";\n  src: url(\"/assets/fonts/manifold/ManifoldCF-DemiBoldOblique.eot\"); /* IE9 Compat Mode */\n  src: url(\"/assets/fonts/manifold/ManifoldCF-DemiBoldOblique.eot?#iefix\")\n      format(\"embedded-opentype\"),\n    url(\"/assets/fonts/manifold/ManifoldCF-DemiBoldOblique.woff2\")\n      format(\"woff2\"),\n    url(\"/assets/fonts/manifold/ManifoldCF-DemiBoldOblique.woff\") format(\"woff\"),\n    url(\"/assets/fonts/manifold/ManifoldCF-DemiBoldOblique.ttf\")\n      format(\"truetype\"); /* Safari, Android, iOS */\n  font-weight: 500;\n  font-style: italic;\n}\n@font-face {\n  font-family: \"ManifoldCF\";\n  src: url(\"/assets/fonts/manifold/ManifoldCF-Bold.eot\"); /* IE9 Compat Mode */\n  src: url(\"/assets/fonts/manifold/ManifoldCF-Bold.eot?#iefix\")\n      format(\"embedded-opentype\"),\n    url(\"/assets/fonts/manifold/ManifoldCF-Bold.woff2\") format(\"woff2\"),\n    url(\"/assets/fonts/manifold/ManifoldCF-Bold.woff\") format(\"woff\"),\n    url(\"/assets/fonts/manifold/ManifoldCF-Bold.ttf\") format(\"truetype\"); /* Safari, Android, iOS */\n  font-weight: 600;\n  font-style: normal;\n}\n@font-face {\n  font-family: \"ManifoldCF\";\n  src: url(\"/assets/fonts/manifold/ManifoldCF-BoldOblique.eot\"); /* IE9 Compat Mode */\n  src: url(\"/assets/fonts/manifold/ManifoldCF-BoldOblique.eot?#iefix\")\n      format(\"embedded-opentype\"),\n    url(\"/assets/fonts/manifold/ManifoldCF-BoldOblique.woff2\") format(\"woff2\"),\n    url(\"/assets/fonts/manifold/ManifoldCF-BoldOblique.woff\") format(\"woff\"),\n    url(\"/assets/fonts/manifold/ManifoldCF-BoldOblique.ttf\") format(\"truetype\"); /* Safari, Android, iOS */\n  font-weight: 600;\n  font-style: italic;\n}\n\n/* Colors */\n.kow-red,\na.kow-red,\n.type-block a.kow-red {\n  color: #ff0035;\n}\n.kow-green,\na.kow-green,\n.type-block a.kow-green {\n  color: #04aa56;\n}\n.kow-pink,\na.kow-pink,\n.type-block a.kow-pink {\n  color: #ff008d;\n}\n\n/* Grid stuff */\n\n/* Type blocks are areas where images and paragraphs interact, they sit next\nto each other and flow around one another. Most of the Layout rules will happen here. */\n* {\n  font-family: \"ManifoldCF\";\n  font-weight: 400;\n  color: #1b1b1b;\n  -webkit-font-smoothing: antialiased;\n  font-smoothing: antialiased;\n}\nhtml {\n  background-color: #eef3f4;\n  /*background-color: white;*/\n}\n.site-wrapper {\n  width: 100%;\n  max-width: 1240px;\n  margin: auto;\n  padding-top: 20px;\n}\n\n/* Article Header */\n.article-header {\n  display: block;\n  clear: both;\n  position: relative;\n  height: calc(50% - 60px);\n  max-height: 590px; /* We may need this again. */\n  min-height: 250px;\n  /*background-color:blue;*/\n}\n\n.article-header .text-block {\n  display: block;\n  position: absolute;\n  width: calc(50% - 60px);\n  bottom: 0;\n  right: 0;\n}\n\n.article-header .text-block p,\n.article-header .text-block span,\n.article-header .text-block h1 {\n  float: none;\n  text-align: left;\n  margin: 0;\n  margin-bottom: 0;\n}\n\n.article-header .text-block h1 {\n  font-weight: 600;\n}\n\n.article-header img {\n  display: block;\n  position: relative;\n  width: 100%;\n  max-width: 50%;\n}\n\n.article-header p,\n.article-header h1,\n.article-header span {\n  /*margin-left: 60px;*/\n  float: right;\n}\n\n.article-header p {\n  font-size: 1.25rem;\n  line-height: 2rem;\n}\n\n/*  This is that edge case on actual post pages that should prevent giant headlines\nfrom ruining the design. */\n.post-full .article-header .text-block {\n  position: relative;\n  float: right;\n}\n.post-full .article-header img {\n  float: left;\n}\n\n/* TYPOGRAPHY AND SIZING AND STUFF */\n.type-block {\n  font-size: 1.25rem; /* .f4 */\n  line-height: 2rem;\n  display: block;\n  position: relative;\n  clear: both;\n}\n\n.type-block h1 {\n  font-size: 6rem; /* .headline */\n  line-height: 6rem;\n  font-weight: 600;\n}\n\n.type-block h2 {\n  font-size: 4rem; /* .headline */\n  line-height: 4rem;\n  font-weight: 600;\n}\n\n.type-block h3 {\n  font-size: 2rem; /* .headline */\n  line-height: 2rem;\n  font-weight: 500;\n}\n\n.type-block > p:first-child {\n  font-size: 2.25rem; /* .f2 */\n  line-height: 2.5rem;\n  font-weight: 500;\n}\n\n.type-block img {\n  display: block;\n  position: relative;\n  width: 100%;\n  max-width: 50%;\n  float: left;\n  margin-bottom: 2rem;\n}\n\n/*\n  Blocked Links\n*/\n.image-link {\n  border: none;\n}\n.content-link {\n  text-decoration: none;\n}\n\n/*\n  post-Card Stuff\n*/\n.post-card {\n  margin-bottom: 6rem;\n}\n\n/*\n  Type Stuff\n*/\n.article-header {\n  margin-bottom: 2rem;\n}\n\n/* some brief link stuff */\na:hover {\n  text-decoration: none;\n}\n\n.type-block p,\n.type-block ul,\n.type-block ol,\n.type-block blockquote,\n.type-block h1,\n.type-block h2,\n.type-block h3,\n.type-block h4,\n.type-block h5,\n.type-block h6 {\n  margin-top: 0;\n  margin-bottom: 3rem;\n}\n\n.type-block > p,\n.type-block > ul,\n.type-block > ol,\n.type-block > blockquote,\n.type-block > h1,\n.type-block > h2,\n.type-block > h3,\n.type-block > h4,\n.type-block > h5,\n.type-block > h6,\n.type-block pre,\n.type-block div.gist,\n.kg-card-markdown > p,\n.kg-card-markdown > ul,\n.kg-card-markdown > ol,\n.kg-card-markdown > blockquote,\n.kg-card-markdown > h1,\n.kg-card-markdown > h2,\n.kg-card-markdown > h3,\n.kg-card-markdown > h4,\n.kg-card-markdown > h5,\n.kg-card-markdown > h6,\n.kg-card-markdown pre,\n.kg-card-markdown div.gist,\n.footnotes {\n  margin-left: calc(50% + 60px);\n}\n\n.type-block img + p:after {\n  content: \"\";\n  display: block;\n  clear: both;\n}\n\n.type-block a,\n.kg-card-markdown a {\n  color: #198eff;\n  font-weight: 600;\n  text-decoration: none;\n}\n\n.type-block a:hover,\n.kg-card-markdown a:hover {\n  text-decoration: underline;\n}\n\nhr {\n  border: 2px solid #1b1b1b;\n  margin-bottom: 3rem;\n  margin-top: 3rem;\n  margin-left: calc(50% + 60px);\n}\n\n/*\n  Navigation\n*/\n.site-header {\n  margin-bottom: 2rem;\n  clear: both;\n  position: relative;\n  display: inline-block;\n  width: 100%;\n}\n.header-navigation ul.nav,\n.type-block ul.nav {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n.header-navigation ul.nav li {\n  display: inline-block;\n  float: left;\n  /*margin-right: 1rem;*/\n  margin-left: 2rem;\n  font-size: 1.5rem;\n  line-height: 2rem;\n  font-weight: 500;\n  text-transform: uppercase;\n}\n.type-block ul.nav li {\n  margin-left: calc(50% + 60px);\n  font-weight: 500;\n}\n.header-navigation ul.nav li a,\n.type-block ul.nav li a {\n  text-decoration: none;\n}\n.header-navigation ul.nav li a:hover,\n.type-block ul.nav li a:hover {\n  text-decoration: underline;\n}\n\n.site-logo {\n  max-height: 40px;\n  float: right;\n  margin-right: 2rem;\n}\n\n/*\n  subscribe-form\n*/\n.subscribe-form {\n  width: calc(100% - 1rem);\n  margin-left: 0.5rem;\n  padding: 1.5rem;\n  border: 4px solid #eef3f4;\n  background-color: #1b1b1b;\n  width: calc(50% - 60px);\n  float: right;\n  clear: both;\n  position: inline-block;\n  display: block;\n}\n.subscribe-form * {\n  color: white;\n}\n.subscribe-form .form-group input {\n  width: 100%;\n  border: none;\n  padding: 3px 10px;\n  font-size: 18px;\n  line-height: 24px;\n  height: 36px;\n  margin-bottom: 1rem;\n  color: black;\n  font-family: \"ManifoldCF\";\n  font-weight: 500;\n  color: #1b1b1b;\n  -webkit-font-smoothing: antialiased;\n  font-smoothing: antialiased;\n}\n\n.subscribe-form button {\n  margin: 1rem auto 2rem;\n  display: block;\n  padding: 5px 20px;\n  color: #1b1b1b;\n  background-color: white;\n  border: none;\n  cursor: pointer;\n  font-size: 1.5rem;\n  font-weight: 600;\n  text-transform: uppercase;\n}\n.subscribe-form button:hover {\n  text-decoration: underline;\n}\n.subscribe-form button span {\n  color: #1b1b1b;\n}\n\n/*\n  .pagination\n*/\n.pagination {\n  display: block;\n  margin: 2rem auto;\n  width: 100%;\n  text-align: center;\n}\n\n/*\n  .footer\n*/\n.site-footer {\n  display: block;\n  width: 100%;\n  background: black;\n  padding: 2rem;\n}\n\n.site-footer p,\n.site-footer h1,\n.site-footer h2,\n.site-footer h3 {\n  color: white;\n}\n\n/* Middling */\n@media screen and (max-width: 1100px) {\n}\n\n/* small */\n@media screen and (max-width: 700px) {\n  .post-card {\n    margin-bottom: 4rem;\n  }\n\n  .article-header {\n    max-height: none; /* We may need this again. */\n  }\n\n  .article-header .text-block,\n  .text-block,\n  .type-block {\n    position: relative;\n    width: calc(100% - 4rem);\n    margin: 0px auto;\n  }\n  .pagination {\n    margin: 2rem auto;\n  }\n\n  .post-full .article-header .text-block {\n    float: none;\n  }\n\n  .subscribe-form {\n    width: calc(100% - 4rem);\n    float: none;\n    margin: 0px auto;\n  }\n\n  .type-block img {\n    float: none;\n    margin-left: 0rem;\n    max-width: 100%;\n  }\n\n  .article-header img {\n    float: none;\n    margin-left: 2rem;\n    max-width: calc(100% - 4rem);\n    margin-bottom: 2rem;\n  }\n\n  .type-block p,\n  .type-block ul,\n  .type-block ol,\n  .type-block blockquote,\n  .type-block h1,\n  .type-block h2,\n  .type-block h3,\n  .type-block h4,\n  .type-block h5,\n  .type-block h6,\n  .type-block hr,\n  .type-block pre,\n  .type-block div.gist,\n  .type-block ul.nav li {\n    margin-left: 0px;\n  }\n}\n\n/*\n  Utility Classes\n  To begin moving towards low specificity classes to control the layout I'll add\n  utility classes that can be used to replicate these behaviours.\n*/\n\n/*\n  Sorted Type\n  All content Type hugs the right of the screen except on mobile.\n  These classes let that be a reality for any element.\n */\n.sorted-type,\n.sr {\n  margin-left: calc(50% + 60px);\n}\n@media screen and (max-width: 700px) {\n  .sorted-type,\n  .sr {\n    margin-left: 0px;\n  }\n}\n"],"file":"global.css","sourceRoot":"/source/"}
 /* Font Stuff */
 /*
   400 regular
@@ -203,7 +203,7 @@ from ruining the design. */
   font-weight: 500;
 }
 
-.type-block .kg-card-markdown > p:first-child {
+.type-block > p:first-child {
   font-size: 2.25rem; /* .f2 */
   line-height: 2.5rem;
   font-weight: 500;
@@ -244,7 +244,7 @@ from ruining the design. */
 
 /* some brief link stuff */
 a:hover {
-  text-decoration:none;
+  text-decoration: none;
 }
 
 .type-block p,
@@ -528,6 +528,581 @@ hr {
 }
 
 /*# sourceMappingURL=global.css.map */
+
+{"version":3,"names":[],"mappings":"","sources":["portfolio.css"],"sourcesContent":["/*\n  The direct Portfolio CSS MAP!!!!\n*/\n\n/* TypeFace */\n/*\n  400 regular\n  500 medium\n  600 demi-bold\n  700 bold\n  900 black\n*/\n@font-face {\n  font-family: \"GreycliffCF\";\n  src: url(\"/assets/fonts/greycliff/GreycliffCF-Regular.eot\"); /* IE9 Compat Mode */\n  src: url(\"/assets/fonts/greycliff/GreycliffCF-Regular.eot?#iefix\")\n      format(\"embedded-opentype\"),\n    url(\"/assets/fonts/greycliff/GreycliffCF-Regular.woff2\") format(\"woff2\"),\n    url(\"/assets/fonts/greycliff/GreycliffCF-Regular.woff\") format(\"woff\"),\n    url(\"/assets/fonts/greycliff/GreycliffCF-Regular.ttf\") format(\"truetype\"); /* Safari, Android, iOS */\n  font-weight: 400;\n  font-style: normal;\n}\n@font-face {\n  font-family: \"GreycliffCF\";\n  src: url(\"/assets/fonts/greycliff/GreycliffCF-RegularOblique.eot\"); /* IE9 Compat Mode */\n  src: url(\"/assets/fonts/greycliff/GreycliffCF-RegularOblique.eot?#iefix\")\n      format(\"embedded-opentype\"),\n    url(\"/assets/fonts/greycliff/GreycliffCF-RegularOblique.woff2\")\n      format(\"woff2\"),\n    url(\"/assets/fonts/greycliff/GreycliffCF-RegularOblique.woff\") format(\"woff\"),\n    url(\"/assets/fonts/greycliff/GreycliffCF-RegularOblique.ttf\")\n      format(\"truetype\"); /* Safari, Android, iOS */\n  font-weight: 400;\n  font-style: italic;\n}\n@font-face {\n  font-family: \"GreycliffCF\";\n  src: url(\"/assets/fonts/greycliff/GreycliffCF-Medium.eot\"); /* IE9 Compat Mode */\n  src: url(\"/assets/fonts/greycliff/GreycliffCF-Medium.eot?#iefix\")\n      format(\"embedded-opentype\"),\n    url(\"/assets/fonts/greycliff/GreycliffCF-Medium.woff2\") format(\"woff2\"),\n    url(\"/assets/fonts/greycliff/GreycliffCF-Medium.woff\") format(\"woff\"),\n    url(\"/assets/fonts/greycliff/GreycliffCF-Medium.ttf\") format(\"truetype\"); /* Safari, Android, iOS */\n  font-weight: 500;\n  font-style: normal;\n}\n@font-face {\n  font-family: \"GreycliffCF\";\n  src: url(\"/assets/fonts/greycliff/GreycliffCF-MediumOblique.eot\"); /* IE9 Compat Mode */\n  src: url(\"/assets/fonts/greycliff/GreycliffCF-MediumOblique.eot?#iefix\")\n      format(\"embedded-opentype\"),\n    url(\"/assets/fonts/greycliff/GreycliffCF-MediumOblique.woff2\")\n      format(\"woff2\"),\n    url(\"/assets/fonts/greycliff/GreycliffCF-MediumOblique.woff\") format(\"woff\"),\n    url(\"/assets/fonts/greycliff/GreycliffCF-MediumOblique.ttf\")\n      format(\"truetype\"); /* Safari, Android, iOS */\n  font-weight: 500;\n  font-style: italic;\n}\n@font-face {\n  font-family: \"GreycliffCF\";\n  src: url(\"/assets/fonts/greycliff/GreycliffCF-DemiBold.eot\"); /* IE9 Compat Mode */\n  src: url(\"/assets/fonts/greycliff/GreycliffCF-DemiBold.eot?#iefix\")\n      format(\"embedded-opentype\"),\n    url(\"/assets/fonts/greycliff/GreycliffCF-DemiBold.woff2\") format(\"woff2\"),\n    url(\"/assets/fonts/greycliff/GreycliffCF-DemiBold.woff\") format(\"woff\"),\n    url(\"/assets/fonts/greycliff/GreycliffCF-DemiBold.ttf\") format(\"truetype\"); /* Safari, Android, iOS */\n  font-weight: 600;\n  font-style: normal;\n}\n@font-face {\n  font-family: \"GreycliffCF\";\n  src: url(\"/assets/fonts/greycliff/GreycliffCF-DemiBoldOblique.eot\"); /* IE9 Compat Mode */\n  src: url(\"/assets/fonts/greycliff/GreycliffCF-DemiBoldOblique.eot?#iefix\")\n      format(\"embedded-opentype\"),\n    url(\"/assets/fonts/greycliff/GreycliffCF-DemiBoldOblique.woff2\")\n      format(\"woff2\"),\n    url(\"/assets/fonts/greycliff/GreycliffCF-DemiBoldOblique.woff\") format(\"woff\"),\n    url(\"/assets/fonts/greycliff/GreycliffCF-DemiBoldOblique.ttf\")\n      format(\"truetype\"); /* Safari, Android, iOS */\n  font-weight: 600;\n  font-style: italic;\n}\n@font-face {\n  font-family: \"GreycliffCF\";\n  src: url(\"/assets/fonts/greycliff/GreycliffCF-Bold.eot\"); /* IE9 Compat Mode */\n  src: url(\"/assets/fonts/greycliff/GreycliffCF-Bold.eot?#iefix\")\n      format(\"embedded-opentype\"),\n    url(\"/assets/fonts/greycliff/GreycliffCF-Bold.woff2\") format(\"woff2\"),\n    url(\"/assets/fonts/greycliff/GreycliffCF-Bold.woff\") format(\"woff\"),\n    url(\"/assets/fonts/greycliff/GreycliffCF-Bold.ttf\") format(\"truetype\"); /* Safari, Android, iOS */\n  font-weight: 700;\n  font-style: normal;\n}\n@font-face {\n  font-family: \"GreycliffCF\";\n  src: url(\"/assets/fonts/greycliff/GreycliffCF-BoldOblique.eot\"); /* IE9 Compat Mode */\n  src: url(\"/assets/fonts/greycliff/GreycliffCF-BoldOblique.eot?#iefix\")\n      format(\"embedded-opentype\"),\n    url(\"/assets/fonts/greycliff/GreycliffCF-BoldOblique.woff2\") format(\"woff2\"),\n    url(\"/assets/fonts/greycliff/GreycliffCF-BoldOblique.woff\") format(\"woff\"),\n    url(\"/assets/fonts/greycliff/GreycliffCF-BoldOblique.ttf\") format(\"truetype\"); /* Safari, Android, iOS */\n  font-weight: 700;\n  font-style: italic;\n}\n\n\n/* font converted using font-converter.net. thank you! */\n@font-face {\n  font-family: \"PlayfairDisplay-Black\";\n  src: url(\"/assets/fonts/playfair/PlayfairDisplay-Black.eot\"); /* IE9 Compat Modes */\n  src: url(\"/assets/fonts/playfair/PlayfairDisplay-Black.eot?#iefix\") format(\"embedded-opentype\"), /* IE6-IE8 */\n    url(\"/assets/fonts/playfair/PlayfairDisplay-Black.otf\") format(\"opentype\"), /* Open Type Font */\n    url(\"/assets/fonts/playfair/PlayfairDisplay-Black.svg\") format(\"svg\"), /* Legacy iOS */\n    url(\"/assets/fonts/playfair/PlayfairDisplay-Black.ttf\") format(\"truetype\"), /* Safari, Android, iOS */\n    url(\"/assets/fonts/playfair/PlayfairDisplay-Black.woff\") format(\"woff\"), /* Modern Browsers */\n    url(\"/assets/fonts/playfair/PlayfairDisplay-Black.woff2\") format(\"woff2\"); /* Modern Browsers */\n  font-weight: normal;\n  font-style: normal;\n}\n/* font converted using font-converter.net. thank you! */\n@font-face {\n  font-family: \"PlayfairDisplay-Black\";\n  src: url(\"/assets/fonts/playfair/PlayfairDisplay-BlackItalic.eot\"); /* IE9 Compat Modes */\n  src: url(\"/assets/fonts/playfair/PlayfairDisplay-BlackItalic.eot?#iefix\") format(\"embedded-opentype\"), /* IE6-IE8 */\n    url(\"/assets/fonts/playfair/PlayfairDisplay-BlackItalic.otf\") format(\"opentype\"), /* Open Type Font */\n    url(\"/assets/fonts/playfair/PlayfairDisplay-BlackItalic.svg\") format(\"svg\"), /* Legacy iOS */\n    url(\"/assets/fonts/playfair/PlayfairDisplay-BlackItalic.ttf\") format(\"truetype\"), /* Safari, Android, iOS */\n    url(\"/assets/fonts/playfair/PlayfairDisplay-BlackItalic.woff\") format(\"woff\"), /* Modern Browsers */\n    url(\"/assets/fonts/playfair/PlayfairDisplay-BlackItalic.woff2\") format(\"woff2\"); /* Modern Browsers */\n  font-weight: normal;\n  font-style: italic;\n}\n@font-face {\n  font-family: \"Futura\";\n  src: url(\"/assets/fonts/futura/futura.eot\"); /* IE9 Compat Modes */\n  src: url(\"/assets/fonts/futura/futura.eot?#iefix\") format(\"embedded-opentype\"), /* IE6-IE8 */\n    url(\"/assets/fonts/futura/futura.otf\") format(\"opentype\"), /* Open Type Font */\n    url(\"/assets/fonts/futura/futura.svg\") format(\"svg\"), /* Legacy iOS */\n    url(\"/assets/fonts/futura/futura.ttf\") format(\"truetype\"), /* Safari, Android, iOS */\n    url(\"/assets/fonts/futura/futura.woff\") format(\"woff\"), /* Modern Browsers */\n    url(\"/assets/fonts/futura/futura.woff2\") format(\"woff2\"); /* Modern Browsers */\n  font-weight: normal;\n  font-style: normal;\n}\n\n/*\n  Colors\n*/\n:root {\n  --yellow-bg: #FFFFF6;\n  --mustard: #FFC729;\n  --electric-green: #00C764;\n  --off-black: #333333;\n  --off-grey: #747474;\n  --neon-pink: #FF008D;\n  --light-grey: #D8D8D8;\n}\n\n/*\n  Portfolio Grid\n\n  There is a new grid for the Portfolio and I think it's gonna be fantastic.\n  6 columns, 16.666667% each\n*/\n.supercontainer {\n  padding:0px;\n  width:100%;\n  margin:auto;\n  height:inherit;\n  display:block;\n  position:relative;\n  min-height: 100vh;\n  overflow:hidden;\n}\n\n.supercontainer.yellow-bg, html {background-color:var(--yellow-bg)}\n.supercontainer.white-bg, html {background-color:white}\n\n.new-grid-container, .ng-c {\n  display:block;\n  position: relative;\n  width:100%;\n  max-width: 1152px;\n  margin:0px auto;\n}\n\n.new-grid-1-column, .ng-1c {\n  display:block;\n  position:relative;\n  width:100%;\n  max-width:16.66666%;\n  box-sizing:border-box;\n  padding:0px 32px\n}\n\n.new-grid-2-column, .ng-2c {\n  display:block;\n  position:relative;\n  width:100%;\n  max-width:33.33333%;\n  box-sizing:border-box;\n  padding:0px 32px\n}\n\n.new-grid-3-column, .ng-3c {\n  display:block;\n  position:relative;\n  width:100%;\n  max-width:50%;\n  box-sizing:border-box;\n  padding:0px 32px\n}\n\n.new-grid-4-column, .ng-4c {\n  display:block;\n  position:relative;\n  width:100%;\n  max-width:66.66666%;\n  box-sizing:border-box;\n  padding:0px 32px\n}\n\n.new-grid-5-column, .ng-5c {\n  display:block;\n  position:relative;\n  width:100%;\n  max-width:83.33333%;\n  box-sizing:border-box;\n  padding:0px 32px\n}\n\n.new-grid-6-column, .ng-6c {\n  display:block;\n  position:relative;\n  width:100%;\n  max-width:100%;\n  box-sizing:border-box;\n  padding:0px 32px\n}\n\n@media (min-width: 37.5em) {/* -ns */\n  .new-grid-1-column-ns, .ng-1c-ns {max-width:16.66666%}\n  .new-grid-2-column-ns, .ng-2c-ns {max-width:33.33333%}\n  .new-grid-3-column-ns, .ng-3c-ns {max-width:50%}\n  .new-grid-4-column-ns, .ng-4c-ns {max-width:66.66666%}\n  .new-grid-5-column-ns, .ng-5c-ns {max-width:83.33333%}\n  .new-grid-6-column-ns, .ng-6c-ns {max-width:100%}\n}\n@media (min-width: 37.5em) and (max-width: 60em) {/* -m */\n  .new-grid-1-column-m, .ng-1c-m {max-width:16.66666%}\n  .new-grid-2-column-m, .ng-2c-m {max-width:33.33333%}\n  .new-grid-3-column-m, .ng-3c-m {max-width:50%}\n  .new-grid-4-column-m, .ng-4c-m {max-width:66.66666%}\n  .new-grid-5-column-m, .ng-5c-m {max-width:83.33333%}\n  .new-grid-6-column-m, .ng-6c-m {max-width:100%}\n}\n@media (min-width: 60em) {/* -l */\n  .new-grid-1-column-l, .ng-1c-l {max-width:16.66666%}\n  .new-grid-2-column-l, .ng-2c-l {max-width:33.33333%}\n  .new-grid-3-column-l, .ng-3c-l {max-width:50%}\n  .new-grid-4-column-l, .ng-4c-l {max-width:66.66666%}\n  .new-grid-5-column-l, .ng-5c-l {max-width:83.33333%}\n  .new-grid-6-column-l, .ng-6c-l {max-width:100%}\n}\n\n/* text columns */\n.columned-text-3 {\n  column-count:3;\n  column-gap:64px;\n}\n.columned-text-2 {\n  column-count:2;\n  column-gap:64px;\n}\n.columned-text-1 {\n  column-count:1;\n  column-gap:0px;\n}\n@media (min-width: 37.5em) {/* -ns */\n  .columned-text-3-ns {\n    column-count:3;\n    column-gap:64px;\n  }\n  .columned-text-2-ns {\n    column-count:2;\n    column-gap:64px;\n  }\n  .columned-text-1-ns {\n    column-count:1;\n    column-gap:0px;\n  }\n}\n@media (min-width: 37.5em) and (max-width: 60em) {/* -m */\n  .columned-text-3-m {\n    column-count:3;\n    column-gap:64px;\n  }\n  .columned-text-2-m {\n    column-count:2;\n    column-gap:64px;\n  }\n  .columned-text-1-m {\n    column-count:1;\n    column-gap:0px;\n  }\n}\n@media (min-width: 60em) {/* -l */\n  .columned-text-3-l {\n    column-count:3;\n    column-gap:64px;\n  }\n  .columned-text-2-l {\n    column-count:2;\n    column-gap:64px;\n  }\n  .columned-text-1-l {\n    column-count:1;\n    column-gap:0px;\n  }\n}\n\n.standard-text, .standard-text * {\n  color:var(--off-black);\n  font-size:20px;\n  line-height: 32px;\n  font-family:'GreycliffCF', Helvetica, sans-serif;\n  font-weight:500;\n  clear:both;\n}\n.standard-text p {\n  margin-top:0px;\n  margin-bottom: 32px;\n}\n\n.standard-text p span.rally {\n  font-family: 'futura', Helvetica, sans-serif;\n  font-weight: bold;\n  text-transform:uppercase;\n  letter-spacing:-1px;\n}\n.standard-text p a {\n  color:var(--electric-green);\n  font-weight: 700;\n}\n\n.header-text, .header-text a {\n  font-size:40px;\n  line-height:50px;\n  color: var(--mustard);\n  font-family: 'PlayfairDisplay-Black', Arial, serif;\n  text-shadow:2px 2px 0px #FFFFF6;\n  margin-top:0px;\n}\n.header-text a {text-decoration: underline;font-style: italic;}\n.header-text a:hover {text-decoration: none;}\n\n.header-text.large {\n  font-size:60px;\n  line-height: 60px;\n}\n.header-text.green {\n  color:var(--electric-green);\n}\n.header-text em {\n  font-style: italic;\n  font-family: 'PlayfairDisplay-Black', Arial, serif;\n  color:var(--off-grey);\n}\n\n/* Vertibar Stuff */\n.vertibar {\n  display:block;\n  width:600vw;\n  height:210px;\n  position: absolute;\n  top: 30%;\n  margin-top: -105px;\n  transform: rotate(-45deg);\n  right: 0;\n  margin-right: -300vw;\n  z-index: 0;\n  pointer-events: none;\n}\n.vertibar.supra {\n  z-index: 1000;\n  mix-blend-mode: lighten;\n}\n\n@media (min-width: 37.5em) and (max-width: 60em) {.vertibar {top:20%}} /* -m */\n@media (min-width: 60em) {.vertibar {top:0%}} /* -l */\n.offset500, .vertibar.offset500 {top:500px;}\n.offset1000, .vertibar.offset1000 {top:1000px;}\n.offset1500, .vertibar.offset1500 {top:1500px;}\n.offset2000, .vertibar.offset2000 {top:2000px;}\n.offset2500, .vertibar.offset2500 {top:2500px;}\n.offset3000, .vertibar.offset3000 {top:3000px;}\n.offset3500, .vertibar.offset3500 {top:3500px;}\n\n.top {\n  display: block;\n  position: absolute;\n  width:100%;\n  height: 105px;\n  top:0;\n  left:0;\n  background-color:var(--mustard);\n}\n.bottom {\n  display: block;\n  position: absolute;\n  width:100%;\n  height: 105px;\n  bottom:0;\n  left:0;\n  background-color:var(--off-grey);\n}\n.top.green, .bottom.green {background-color:var(--electric-green);}\n.bottom.grey, .top.grey {background-color:var(--light-grey);}\n\n/* New Menu and logo */\n.logo-text {\n  display: inline-block;\n  width:100%;\n  font-family: 'PlayfairDisplay-Black', Arial, serif;\n  font-style: italic;\n  /* font-weight: 400; */\n  font-size: 30px;\n  line-height: 30px;\n  margin:0;\n  text-align: center;\n  color:var(--electric-green);\n  margin-bottom:20px;\n}\n.menu-text {\n  font-family: 'ManifoldCF';\n  font-style: italic;\n  font-weight: 400;\n  font-size: 20px;\n  line-height: 20px;\n  padding: 0px;\n  list-style: none;\n  margin:0;\n  text-decoration:none;\n  text-align: center;\n  height: 0px;\n  opacity: 0;\n}\n.menu-text.visible {\n  height:150px;\n  opacity:1.0;\n}\n.menu-text li {}\n.menu-text li a {text-decoration:none;}\n.menu-text li a:hover {text-decoration:underline;}\n\n/* menu icons */\n.icon {\n  content:'';\n  display:inline-block;\n  width: 42px;\n  height: 16px;\n  background-size: 18px 18px;\n  background-position: center;\n  background-repeat: no-repeat;\n  cursor: pointer;\n  margin-right:-42px;\n  background-image:url('/assets/images/menu-icon.svg');\n}\n.icon.close {background-image:url('/assets/images/close-icon.svg');}\n@media (min-width: 37.5em) {.icon {display:none;}.menu-text {height: auto; opacity: 1.0;}} /* -ns */\n\n@media (max-width: 37.5em){/* -s */\n  .menu-text {\n    transition: all 0.45s 0s cubic-bezier(0.245, 0.05, 0.55, 0.95);\n  }\n}\n\n@media (min-width: 37.5em) and (max-width: 60em) {/* -m */\n  .logo-text {\n    font-size: 40px;\n    line-height: 40px;\n    text-align: right;\n  }\n  .menu-text {\n    font-size: 40px;\n    line-height: 40px;\n    text-align: right;\n  }\n}\n@media (min-width: 60em) {/* -l */\n  .logo-text {\n    font-size: 60px;\n    line-height: 60px;\n    text-align: right;\n  }\n  .menu-text {\n    font-size: 60px;\n    line-height: 60px;\n    text-align: right;\n  }\n  .margt-6-ns {\n    margin-top:8rem;\n  }\n}\n\n/* Portfolio images */\nimg.portfolio {\n  display:block;\n  position: relative;\n  width:100%;\n  height:auto;\n  box-shadow: 0px 15px 38px rgba(0, 0, 0, 0.25);\n}\nimg.portfolio.unsullied {z-index: 1001;}\n\n/* Super Text */\n.supertext {\n  font-size:200px;\n  letter-spacing: -13.333px;\n  font-family: 'futura', sans-serif;\n  font-weight: bold;\n  color:var(--electric-green);\n  mix-blend-mode: multiply;\n  transform: rotateZ(90deg);\n  position: absolute;\n  left: 200px;\n  /* top: 0px; */\n  -webkit-transform-origin: 0% 0%;\n  z-index: 1002;\n}\n@media (min-width: 37.5em) and (max-width: 60em) {.supertext { font-size:200px;left:200px;letter-spacing: -13.333px; } } /* -m */\n@media (min-width: 60em) {.supertext { font-size:300px;left:300px;letter-spacing: -20px; } } /* -l */\n\n\n/* Logo Wing */\n.logo-hr {\n  display:block;\n  position:relative;\n  width:100%;\n  height: 60px;\n}\n\n.logo-hr .logo {\n  display:block;\n  position: relative;\n  margin-left:auto;\n  margin-right:auto;\n  background-position: center;\n  background-size: 64px 64px;\n  background-image:url('/assets/images/portfolio/prologue-logo-green.svg');\n  border-radius:32px;\n  border: 4px solid white;\n  width:64px;\n  height: 64px;\n  background-color:white;\n}\n.logo-hr .wing {\n  height: 6px;\n  width: 100%;\n  position: absolute;\n  left: 0px;\n  top:29px;\n  background-color:var(--electric-green);\n}\n\n/* Media Query Notes */\n@media (min-width: 37.5em) {} /* -ns */\n@media (min-width: 37.5em) and (max-width: 60em) {} /* -m */\n@media (min-width: 60em) {} /* -l */\n"],"file":"portfolio.css","sourceRoot":"/source/"}
+/*
+  The direct Portfolio CSS MAP!!!!
+*/
+
+/* TypeFace */
+/*
+  400 regular
+  500 medium
+  600 demi-bold
+  700 bold
+  900 black
+*/
+@font-face {
+  font-family: "GreycliffCF";
+  src: url("/assets/fonts/greycliff/GreycliffCF-Regular.eot"); /* IE9 Compat Mode */
+  src: url("/assets/fonts/greycliff/GreycliffCF-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/greycliff/GreycliffCF-Regular.woff2") format("woff2"),
+    url("/assets/fonts/greycliff/GreycliffCF-Regular.woff") format("woff"),
+    url("/assets/fonts/greycliff/GreycliffCF-Regular.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GreycliffCF";
+  src: url("/assets/fonts/greycliff/GreycliffCF-RegularOblique.eot"); /* IE9 Compat Mode */
+  src: url("/assets/fonts/greycliff/GreycliffCF-RegularOblique.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/greycliff/GreycliffCF-RegularOblique.woff2")
+      format("woff2"),
+    url("/assets/fonts/greycliff/GreycliffCF-RegularOblique.woff") format("woff"),
+    url("/assets/fonts/greycliff/GreycliffCF-RegularOblique.ttf")
+      format("truetype"); /* Safari, Android, iOS */
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "GreycliffCF";
+  src: url("/assets/fonts/greycliff/GreycliffCF-Medium.eot"); /* IE9 Compat Mode */
+  src: url("/assets/fonts/greycliff/GreycliffCF-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/greycliff/GreycliffCF-Medium.woff2") format("woff2"),
+    url("/assets/fonts/greycliff/GreycliffCF-Medium.woff") format("woff"),
+    url("/assets/fonts/greycliff/GreycliffCF-Medium.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GreycliffCF";
+  src: url("/assets/fonts/greycliff/GreycliffCF-MediumOblique.eot"); /* IE9 Compat Mode */
+  src: url("/assets/fonts/greycliff/GreycliffCF-MediumOblique.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/greycliff/GreycliffCF-MediumOblique.woff2")
+      format("woff2"),
+    url("/assets/fonts/greycliff/GreycliffCF-MediumOblique.woff") format("woff"),
+    url("/assets/fonts/greycliff/GreycliffCF-MediumOblique.ttf")
+      format("truetype"); /* Safari, Android, iOS */
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "GreycliffCF";
+  src: url("/assets/fonts/greycliff/GreycliffCF-DemiBold.eot"); /* IE9 Compat Mode */
+  src: url("/assets/fonts/greycliff/GreycliffCF-DemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/greycliff/GreycliffCF-DemiBold.woff2") format("woff2"),
+    url("/assets/fonts/greycliff/GreycliffCF-DemiBold.woff") format("woff"),
+    url("/assets/fonts/greycliff/GreycliffCF-DemiBold.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GreycliffCF";
+  src: url("/assets/fonts/greycliff/GreycliffCF-DemiBoldOblique.eot"); /* IE9 Compat Mode */
+  src: url("/assets/fonts/greycliff/GreycliffCF-DemiBoldOblique.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/greycliff/GreycliffCF-DemiBoldOblique.woff2")
+      format("woff2"),
+    url("/assets/fonts/greycliff/GreycliffCF-DemiBoldOblique.woff") format("woff"),
+    url("/assets/fonts/greycliff/GreycliffCF-DemiBoldOblique.ttf")
+      format("truetype"); /* Safari, Android, iOS */
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "GreycliffCF";
+  src: url("/assets/fonts/greycliff/GreycliffCF-Bold.eot"); /* IE9 Compat Mode */
+  src: url("/assets/fonts/greycliff/GreycliffCF-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/greycliff/GreycliffCF-Bold.woff2") format("woff2"),
+    url("/assets/fonts/greycliff/GreycliffCF-Bold.woff") format("woff"),
+    url("/assets/fonts/greycliff/GreycliffCF-Bold.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GreycliffCF";
+  src: url("/assets/fonts/greycliff/GreycliffCF-BoldOblique.eot"); /* IE9 Compat Mode */
+  src: url("/assets/fonts/greycliff/GreycliffCF-BoldOblique.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/greycliff/GreycliffCF-BoldOblique.woff2") format("woff2"),
+    url("/assets/fonts/greycliff/GreycliffCF-BoldOblique.woff") format("woff"),
+    url("/assets/fonts/greycliff/GreycliffCF-BoldOblique.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "PlayfairDisplay-Black";
+  src: url("/assets/fonts/playfair/PlayfairDisplay-Black.eot"); /* IE9 Compat Modes */
+  src: url("/assets/fonts/playfair/PlayfairDisplay-Black.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("/assets/fonts/playfair/PlayfairDisplay-Black.otf") format("opentype"), /* Open Type Font */
+    url("/assets/fonts/playfair/PlayfairDisplay-Black.svg") format("svg"), /* Legacy iOS */
+    url("/assets/fonts/playfair/PlayfairDisplay-Black.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("/assets/fonts/playfair/PlayfairDisplay-Black.woff") format("woff"), /* Modern Browsers */
+    url("/assets/fonts/playfair/PlayfairDisplay-Black.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "PlayfairDisplay-Black";
+  src: url("/assets/fonts/playfair/PlayfairDisplay-BlackItalic.eot"); /* IE9 Compat Modes */
+  src: url("/assets/fonts/playfair/PlayfairDisplay-BlackItalic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("/assets/fonts/playfair/PlayfairDisplay-BlackItalic.otf") format("opentype"), /* Open Type Font */
+    url("/assets/fonts/playfair/PlayfairDisplay-BlackItalic.svg") format("svg"), /* Legacy iOS */
+    url("/assets/fonts/playfair/PlayfairDisplay-BlackItalic.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("/assets/fonts/playfair/PlayfairDisplay-BlackItalic.woff") format("woff"), /* Modern Browsers */
+    url("/assets/fonts/playfair/PlayfairDisplay-BlackItalic.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Futura";
+  src: url("/assets/fonts/futura/futura.eot"); /* IE9 Compat Modes */
+  src: url("/assets/fonts/futura/futura.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("/assets/fonts/futura/futura.otf") format("opentype"), /* Open Type Font */
+    url("/assets/fonts/futura/futura.svg") format("svg"), /* Legacy iOS */
+    url("/assets/fonts/futura/futura.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("/assets/fonts/futura/futura.woff") format("woff"), /* Modern Browsers */
+    url("/assets/fonts/futura/futura.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+  Colors
+*/
+:root {
+  --yellow-bg: #FFFFF6;
+  --mustard: #FFC729;
+  --electric-green: #00C764;
+  --off-black: #333333;
+  --off-grey: #747474;
+  --neon-pink: #FF008D;
+  --light-grey: #D8D8D8;
+}
+
+/*
+  Portfolio Grid
+
+  There is a new grid for the Portfolio and I think it's gonna be fantastic.
+  6 columns, 16.666667% each
+*/
+.supercontainer {
+  padding:0px;
+  width:100%;
+  margin:auto;
+  height:inherit;
+  display:block;
+  position:relative;
+  min-height: 100vh;
+  overflow:hidden;
+}
+
+.supercontainer.yellow-bg, html {background-color:var(--yellow-bg)}
+.supercontainer.white-bg, html {background-color:white}
+
+.new-grid-container, .ng-c {
+  display:block;
+  position: relative;
+  width:100%;
+  max-width: 1152px;
+  margin:0px auto;
+}
+
+.new-grid-1-column, .ng-1c {
+  display:block;
+  position:relative;
+  width:100%;
+  max-width:16.66666%;
+  box-sizing:border-box;
+  padding:0px 32px
+}
+
+.new-grid-2-column, .ng-2c {
+  display:block;
+  position:relative;
+  width:100%;
+  max-width:33.33333%;
+  box-sizing:border-box;
+  padding:0px 32px
+}
+
+.new-grid-3-column, .ng-3c {
+  display:block;
+  position:relative;
+  width:100%;
+  max-width:50%;
+  box-sizing:border-box;
+  padding:0px 32px
+}
+
+.new-grid-4-column, .ng-4c {
+  display:block;
+  position:relative;
+  width:100%;
+  max-width:66.66666%;
+  box-sizing:border-box;
+  padding:0px 32px
+}
+
+.new-grid-5-column, .ng-5c {
+  display:block;
+  position:relative;
+  width:100%;
+  max-width:83.33333%;
+  box-sizing:border-box;
+  padding:0px 32px
+}
+
+.new-grid-6-column, .ng-6c {
+  display:block;
+  position:relative;
+  width:100%;
+  max-width:100%;
+  box-sizing:border-box;
+  padding:0px 32px
+}
+
+@media (min-width: 37.5em) {/* -ns */
+  .new-grid-1-column-ns, .ng-1c-ns {max-width:16.66666%}
+  .new-grid-2-column-ns, .ng-2c-ns {max-width:33.33333%}
+  .new-grid-3-column-ns, .ng-3c-ns {max-width:50%}
+  .new-grid-4-column-ns, .ng-4c-ns {max-width:66.66666%}
+  .new-grid-5-column-ns, .ng-5c-ns {max-width:83.33333%}
+  .new-grid-6-column-ns, .ng-6c-ns {max-width:100%}
+}
+@media (min-width: 37.5em) and (max-width: 60em) {/* -m */
+  .new-grid-1-column-m, .ng-1c-m {max-width:16.66666%}
+  .new-grid-2-column-m, .ng-2c-m {max-width:33.33333%}
+  .new-grid-3-column-m, .ng-3c-m {max-width:50%}
+  .new-grid-4-column-m, .ng-4c-m {max-width:66.66666%}
+  .new-grid-5-column-m, .ng-5c-m {max-width:83.33333%}
+  .new-grid-6-column-m, .ng-6c-m {max-width:100%}
+}
+@media (min-width: 60em) {/* -l */
+  .new-grid-1-column-l, .ng-1c-l {max-width:16.66666%}
+  .new-grid-2-column-l, .ng-2c-l {max-width:33.33333%}
+  .new-grid-3-column-l, .ng-3c-l {max-width:50%}
+  .new-grid-4-column-l, .ng-4c-l {max-width:66.66666%}
+  .new-grid-5-column-l, .ng-5c-l {max-width:83.33333%}
+  .new-grid-6-column-l, .ng-6c-l {max-width:100%}
+}
+
+/* text columns */
+.columned-text-3 {
+  column-count:3;
+  column-gap:64px;
+}
+.columned-text-2 {
+  column-count:2;
+  column-gap:64px;
+}
+.columned-text-1 {
+  column-count:1;
+  column-gap:0px;
+}
+@media (min-width: 37.5em) {/* -ns */
+  .columned-text-3-ns {
+    column-count:3;
+    column-gap:64px;
+  }
+  .columned-text-2-ns {
+    column-count:2;
+    column-gap:64px;
+  }
+  .columned-text-1-ns {
+    column-count:1;
+    column-gap:0px;
+  }
+}
+@media (min-width: 37.5em) and (max-width: 60em) {/* -m */
+  .columned-text-3-m {
+    column-count:3;
+    column-gap:64px;
+  }
+  .columned-text-2-m {
+    column-count:2;
+    column-gap:64px;
+  }
+  .columned-text-1-m {
+    column-count:1;
+    column-gap:0px;
+  }
+}
+@media (min-width: 60em) {/* -l */
+  .columned-text-3-l {
+    column-count:3;
+    column-gap:64px;
+  }
+  .columned-text-2-l {
+    column-count:2;
+    column-gap:64px;
+  }
+  .columned-text-1-l {
+    column-count:1;
+    column-gap:0px;
+  }
+}
+
+.standard-text, .standard-text * {
+  color:var(--off-black);
+  font-size:20px;
+  line-height: 32px;
+  font-family:'GreycliffCF', Helvetica, sans-serif;
+  font-weight:500;
+  clear:both;
+}
+.standard-text p {
+  margin-top:0px;
+  margin-bottom: 32px;
+}
+
+.standard-text p span.rally {
+  font-family: 'futura', Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform:uppercase;
+  letter-spacing:-1px;
+}
+.standard-text p a {
+  color:var(--electric-green);
+  font-weight: 700;
+}
+
+.header-text, .header-text a {
+  font-size:40px;
+  line-height:50px;
+  color: var(--mustard);
+  font-family: 'PlayfairDisplay-Black', Arial, serif;
+  text-shadow:2px 2px 0px #FFFFF6;
+  margin-top:0px;
+}
+.header-text a {text-decoration: underline;font-style: italic;}
+.header-text a:hover {text-decoration: none;}
+
+.header-text.large {
+  font-size:60px;
+  line-height: 60px;
+}
+.header-text.green {
+  color:var(--electric-green);
+}
+.header-text em {
+  font-style: italic;
+  font-family: 'PlayfairDisplay-Black', Arial, serif;
+  color:var(--off-grey);
+}
+
+/* Vertibar Stuff */
+.vertibar {
+  display:block;
+  width:600vw;
+  height:210px;
+  position: absolute;
+  top: 30%;
+  margin-top: -105px;
+  transform: rotate(-45deg);
+  right: 0;
+  margin-right: -300vw;
+  z-index: 0;
+  pointer-events: none;
+}
+.vertibar.supra {
+  z-index: 1000;
+  mix-blend-mode: lighten;
+}
+
+@media (min-width: 37.5em) and (max-width: 60em) {.vertibar {top:20%}} /* -m */
+@media (min-width: 60em) {.vertibar {top:0%}} /* -l */
+.offset500, .vertibar.offset500 {top:500px;}
+.offset1000, .vertibar.offset1000 {top:1000px;}
+.offset1500, .vertibar.offset1500 {top:1500px;}
+.offset2000, .vertibar.offset2000 {top:2000px;}
+.offset2500, .vertibar.offset2500 {top:2500px;}
+.offset3000, .vertibar.offset3000 {top:3000px;}
+.offset3500, .vertibar.offset3500 {top:3500px;}
+
+.top {
+  display: block;
+  position: absolute;
+  width:100%;
+  height: 105px;
+  top:0;
+  left:0;
+  background-color:var(--mustard);
+}
+.bottom {
+  display: block;
+  position: absolute;
+  width:100%;
+  height: 105px;
+  bottom:0;
+  left:0;
+  background-color:var(--off-grey);
+}
+.top.green, .bottom.green {background-color:var(--electric-green);}
+.bottom.grey, .top.grey {background-color:var(--light-grey);}
+
+/* New Menu and logo */
+.logo-text {
+  display: inline-block;
+  width:100%;
+  font-family: 'PlayfairDisplay-Black', Arial, serif;
+  font-style: italic;
+  /* font-weight: 400; */
+  font-size: 30px;
+  line-height: 30px;
+  margin:0;
+  text-align: center;
+  color:var(--electric-green);
+  margin-bottom:20px;
+}
+.menu-text {
+  font-family: 'ManifoldCF';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 0px;
+  list-style: none;
+  margin:0;
+  text-decoration:none;
+  text-align: center;
+  height: 0px;
+  opacity: 0;
+}
+.menu-text.visible {
+  height:150px;
+  opacity:1.0;
+}
+.menu-text li {}
+.menu-text li a {text-decoration:none;}
+.menu-text li a:hover {text-decoration:underline;}
+
+/* menu icons */
+.icon {
+  content:'';
+  display:inline-block;
+  width: 42px;
+  height: 16px;
+  background-size: 18px 18px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  margin-right:-42px;
+  background-image:url('/assets/images/menu-icon.svg');
+}
+.icon.close {background-image:url('/assets/images/close-icon.svg');}
+@media (min-width: 37.5em) {.icon {display:none;}.menu-text {height: auto; opacity: 1.0;}} /* -ns */
+
+@media (max-width: 37.5em){/* -s */
+  .menu-text {
+    transition: all 0.45s 0s cubic-bezier(0.245, 0.05, 0.55, 0.95);
+  }
+}
+
+@media (min-width: 37.5em) and (max-width: 60em) {/* -m */
+  .logo-text {
+    font-size: 40px;
+    line-height: 40px;
+    text-align: right;
+  }
+  .menu-text {
+    font-size: 40px;
+    line-height: 40px;
+    text-align: right;
+  }
+}
+@media (min-width: 60em) {/* -l */
+  .logo-text {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: right;
+  }
+  .menu-text {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: right;
+  }
+  .margt-6-ns {
+    margin-top:8rem;
+  }
+}
+
+/* Portfolio images */
+img.portfolio {
+  display:block;
+  position: relative;
+  width:100%;
+  height:auto;
+  box-shadow: 0px 15px 38px rgba(0, 0, 0, 0.25);
+}
+img.portfolio.unsullied {z-index: 1001;}
+
+/* Super Text */
+.supertext {
+  font-size:200px;
+  letter-spacing: -13.333px;
+  font-family: 'futura', sans-serif;
+  font-weight: bold;
+  color:var(--electric-green);
+  mix-blend-mode: multiply;
+  transform: rotateZ(90deg);
+  position: absolute;
+  left: 200px;
+  /* top: 0px; */
+  -webkit-transform-origin: 0% 0%;
+  z-index: 1002;
+}
+@media (min-width: 37.5em) and (max-width: 60em) {.supertext { font-size:200px;left:200px;letter-spacing: -13.333px; } } /* -m */
+@media (min-width: 60em) {.supertext { font-size:300px;left:300px;letter-spacing: -20px; } } /* -l */
+
+
+/* Logo Wing */
+.logo-hr {
+  display:block;
+  position:relative;
+  width:100%;
+  height: 60px;
+}
+
+.logo-hr .logo {
+  display:block;
+  position: relative;
+  margin-left:auto;
+  margin-right:auto;
+  background-position: center;
+  background-size: 64px 64px;
+  background-image:url('/assets/images/portfolio/prologue-logo-green.svg');
+  border-radius:32px;
+  border: 4px solid white;
+  width:64px;
+  height: 64px;
+  background-color:white;
+}
+.logo-hr .wing {
+  height: 6px;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top:29px;
+  background-color:var(--electric-green);
+}
+
+/* Media Query Notes */
+@media (min-width: 37.5em) {} /* -ns */
+@media (min-width: 37.5em) and (max-width: 60em) {} /* -m */
+@media (min-width: 60em) {} /* -l */
+
+/*# sourceMappingURL=portfolio.css.map */
 
 {"version":3,"names":[],"mappings":"","sources":["screen.css"],"sourcesContent":[""],"file":"screen.css","sourceRoot":"/source/"}
 
