@@ -391,6 +391,7 @@
 @media (min-width: 37.5em) and (max-width: 60em) {.vertibar {top:20%}} /* -m */
 @media (min-width: 60em) {.vertibar {top:0%}} /* -l */
 .vertibar.mainvertibar {top: 650px}
+.vertibar.ancillary {top: 0px}
 @media (min-width: 37.5em) and (max-width: 60em) {.vertibar.mainvertibar {top:350px}} /* -m */
 @media (min-width: 60em) {.vertibar.mainvertibar {top:0%}} /* -l */
 .offset500, .vertibar.offset500 {top:500px;}
