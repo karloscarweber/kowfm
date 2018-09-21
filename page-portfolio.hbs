@@ -29,15 +29,7 @@ into the {body} of the default.hbs template --}}
     <div class="top green"></div>
     <div class="bottom green"></div>
   </div>
-  <div class="vertibar supra offset500 parallaxy-animate" parallaxy-options='{"multiplier":"0.25", "direction":"down", "positionType": "absolute", "rotation": "rotate(-45deg)"}'>
-    <div class="top green"></div>
-    <div class="bottom green"></div>
-  </div>
-  <div class="vertibar supra offset1500 parallaxy-animate" parallaxy-options='{"multiplier":"0.25", "direction":"down", "positionType": "absolute", "rotation": "rotate(-45deg)"}'>
-    <div class="top green"></div>
-    <div class="bottom green"></div>
-  </div>
-  <div class="vertibar supra offset2500 parallaxy-animate" parallaxy-options='{"multiplier":"0.25", "direction":"down", "positionType": "absolute", "rotation": "rotate(-45deg)"}'>
+  <div class="vertibar supra parallaxy-animate offset0" parallaxy-options='{"multiplier":"0.85", "direction":"down", "positionType": "absolute", "rotation": "rotate(-45deg)"}'>
     <div class="top green"></div>
     <div class="bottom green"></div>
   </div>
@@ -122,9 +114,9 @@ into the {body} of the default.hbs template --}}
   // var menubutton = document.getElementById('menubutton');
   // var mobilemenu = document.getElementById('mobilemenu');
 
-  menubutton.addEventListener('click', function(){
-    classie.toggle( menubutton, 'close' )
-    classie.toggle( mobilemenu, 'visible' )
-  });
+  // menubutton.addEventListener('click', function(){
+  //   classie.toggle( menubutton, 'close' )
+  //   classie.toggle( mobilemenu, 'visible' )
+  // });
 </script>
 {{/contentFor}}

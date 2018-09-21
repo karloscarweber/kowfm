@@ -372,35 +372,99 @@
 /* Vertibar Stuff */
 .vertibar {
   display:block;
-  width:600vw;
+  width:340vw;
   height:210px;
   position: absolute;
   top: 30%;
   margin-top: -105px;
   transform: rotate(-45deg);
   right: 0;
-  margin-right: -300vw;
+  margin-right: -170vw;
   z-index: 0;
   pointer-events: none;
+  /* transition: all 0s 0s cubic-bezier(0.245, 0.05, 0.55, 0.95); */
 }
 .vertibar.supra {
   z-index: 1000;
   mix-blend-mode: lighten;
+  width:150vw;
+  transform-origin: center center;
+  margin-right: -75vw;
+  right: 50%;
 }
 
-@media (min-width: 37.5em) and (max-width: 60em) {.vertibar {top:20%}} /* -m */
-@media (min-width: 60em) {.vertibar {top:0%}} /* -l */
+@media (min-width: 37.5em) and (max-width: 60em) {.vertibar {top:20%} .vertibar.supra {width:100vw;margin-right:-50vw;}} /* -m */
+@media (min-width: 60em) {.vertibar {top:0%} .vertibar.supra {width:80vw;margin-right:-40vw;}} /* -l */
 .vertibar.mainvertibar {top: 650px}
 .vertibar.ancillary {top: 0px}
 @media (min-width: 37.5em) and (max-width: 60em) {.vertibar.mainvertibar {top:350px}} /* -m */
 @media (min-width: 60em) {.vertibar.mainvertibar {top:0%}} /* -l */
-.offset500, .vertibar.offset500 {top:500px;}
+.offset0, .vertibar.offset0   {top:0px;}
+.offset250, .vertibar.offset250   {top:250px;}
+.offset500, .vertibar.offset500   {top:500px;}
+.offset750, .vertibar.offset750   {top:750px;}
 .offset1000, .vertibar.offset1000 {top:1000px;}
 .offset1500, .vertibar.offset1500 {top:1500px;}
 .offset2000, .vertibar.offset2000 {top:2000px;}
 .offset2500, .vertibar.offset2500 {top:2500px;}
 .offset3000, .vertibar.offset3000 {top:3000px;}
 .offset3500, .vertibar.offset3500 {top:3500px;}
+
+.offset-250, .vertibar.offset-250   {top:-250px;}
+.offset-500, .vertibar.offset-500   {top:-500px;}
+.offset-750, .vertibar.offset-750   {top:-750px;}
+.offset-1000, .vertibar.offset-1000 {top:-1000px;}
+.offset-1500, .vertibar.offset-1500 {top:-1500px;}
+.offset-2000, .vertibar.offset-2000 {top:-2000px;}
+.offset-2500, .vertibar.offset-2500 {top:-2500px;}
+.offset-3000, .vertibar.offset-3000 {top:-3000px;}
+.offset-3500, .vertibar.offset-3500 {top:-3500px;}
+
+/* -m medium size*/
+@media (min-width: 37.5em) and (max-width: 60em) {
+  .offset250-m, .vertibar.offset250-m   {top:250px;}
+  .offset500-m, .vertibar.offset500-m   {top:500px;}
+  .offset750-m, .vertibar.offset750-m   {top:750px;}
+  .offset1000-m, .vertibar.offset1000-m {top:1000px;}
+  .offset1500-m, .vertibar.offset1500-m {top:1500px;}
+  .offset2000-m, .vertibar.offset2000-m {top:2000px;}
+  .offset2500-m, .vertibar.offset2500-m {top:2500px;}
+  .offset3000-m, .vertibar.offset3000-m {top:3000px;}
+  .offset3500-m, .vertibar.offset3500-m {top:3500px;}
+
+  .offset-250-m, .vertibar.offset-250-m   {top:-250px;}
+  .offset-500-m, .vertibar.offset-500-m   {top:-500px;}
+  .offset-750-m, .vertibar.offset-750-m   {top:-750px;}
+  .offset-1000-m, .vertibar.offset-1000-m {top:-1000px;}
+  .offset-1500-m, .vertibar.offset-1500-m {top:-1500px;}
+  .offset-2000-m, .vertibar.offset-2000-m {top:-2000px;}
+  .offset-2500-m, .vertibar.offset-2500-m {top:-2500px;}
+  .offset-3000-m, .vertibar.offset-3000-m {top:-3000px;}
+  .offset-3500-m, .vertibar.offset-3500-m {top:-3500px;}
+}
+
+/* -m medium size*/
+@media (min-width: 60em) {
+  .offset250-l, .vertibar.offset250-l   {top:250px;}
+  .offset500-l, .vertibar.offset500-l   {top:500px;}
+  .offset750-l, .vertibar.offset750-l   {top:750px;}
+  .offset1000-l, .vertibar.offset1000-l {top:1000px;}
+  .offset1500-l, .vertibar.offset1500-l {top:1500px;}
+  .offset2000-l, .vertibar.offset2000-l {top:2000px;}
+  .offset2500-l, .vertibar.offset2500-l {top:2500px;}
+  .offset3000-l, .vertibar.offset3000-l {top:3000px;}
+  .offset3500-l, .vertibar.offset3500-l {top:3500px;}
+
+  .offset-250-l, .vertibar.offset-250-l   {top:-250px;}
+  .offset-500-l, .vertibar.offset-500-l   {top:-500px;}
+  .offset-750-l, .vertibar.offset-750-l   {top:-750px;}
+  .offset-1000-l, .vertibar.offset-1000-l {top:-1000px;}
+  .offset-1500-l, .vertibar.offset-1500-l {top:-1500px;}
+  .offset-2000-l, .vertibar.offset-2000-l {top:-2000px;}
+  .offset-2500-l, .vertibar.offset-2500-l {top:-2500px;}
+  .offset-3000-l, .vertibar.offset-3000-l {top:-3000px;}
+  .offset-3500-l, .vertibar.offset-3500-l {top:-3500px;}
+}
 
 .top {
   display: block;
