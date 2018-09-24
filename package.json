@@ -2,7 +2,7 @@
   "name": "kowfm-v13",
   "description": "The Thirteenth version of kowfm, based on the twelvth, based on Casper.",
   "demo": "https://kow.fm",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "engines": {
     "ghost": ">=1.19.0"
   },
