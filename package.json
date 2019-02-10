@@ -2,9 +2,9 @@
   "name": "kowfm-v13",
   "description": "The Thirteenth version of kowfm, based on the twelvth, based on Casper.",
   "demo": "https://kow.fm",
-  "version": "0.2.8",
+  "version": "0.3.0",
   "engines": {
-    "ghost": ">=1.19.0"
+    "ghost": ">=2.1.4"
   },
   "license": "MIT",
   "screenshots": {
@@ -18,9 +18,15 @@
   },
   "gpm": {
     "type": "theme",
-    "categories": ["Custom"]
+    "categories": [
+      "Custom"
+    ]
   },
-  "keywords": ["ghost", "theme"],
+  "keywords": [
+    "ghost",
+    "theme",
+    "ghost-theme"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/karloscarweber/kowfm.git"
@@ -30,9 +36,9 @@
   "devDependencies": {
     "autoprefixer": "6.3.6",
     "cssnano": "3.7.1",
-    "gulp": "3.9.1",
+    "gulp": "^3.9.1",
     "gulp-livereload": "3.8.1",
-    "gulp-nodemon": "2.1.0",
+    "gulp-nodemon": "^2.4.2",
     "gulp-postcss": "6.1.1",
     "gulp-sourcemaps": "1.6.0",
     "gulp-util": "3.0.7",

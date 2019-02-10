@@ -62,8 +62,8 @@
     {{!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. --}}
     {{{block "scripts"}}}
 
-    <script type="text/javascript" src="/assets/js/classie.js"></script>
-    <script type="text/javascript" src="/assets/js/parallaxative.js"></script>
+    <script type="text/javascript" src="{{ asset "js/classie.js"}}"></script>
+    <script type="text/javascript" src="{{ asset "js/parallaxative.js"}}"></script>
     <script type="text/javascript">
       scrollyscroll = function() {
         parallaxController.scrollHandler();

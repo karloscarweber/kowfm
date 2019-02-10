@@ -18,7 +18,7 @@ To Do
 * [x] Freelance Page Layout
 * [x] Footer Layout
 * [ ] Collapsible Menu - abandonded
-* [ ] Portfolio Page
+* [x] Portfolio Page
 * [x] Responsive Polish
 * [ ] Official Screenshots
 * [ ] SVG Social icons

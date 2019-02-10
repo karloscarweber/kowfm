@@ -272,18 +272,6 @@ a:hover {
 .type-block > h6,
 .type-block pre,
 .type-block div.gist,
-.kg-card-markdown > p,
-.kg-card-markdown > ul,
-.kg-card-markdown > ol,
-.kg-card-markdown > blockquote,
-.kg-card-markdown > h1,
-.kg-card-markdown > h2,
-.kg-card-markdown > h3,
-.kg-card-markdown > h4,
-.kg-card-markdown > h5,
-.kg-card-markdown > h6,
-.kg-card-markdown pre,
-.kg-card-markdown div.gist,
 .footnotes {
   margin-left: calc(50% + 60px);
 }
@@ -294,15 +282,13 @@ a:hover {
   clear: both;
 }
 
-.type-block a,
-.kg-card-markdown a {
+.type-block a {
   color: #198eff;
   font-weight: 600;
   text-decoration: none;
 }
 
-.type-block a:hover,
-.kg-card-markdown a:hover {
+.type-block a:hover {
   text-decoration: underline;
 }
 
@@ -524,6 +510,28 @@ hr {
   .sr {
     margin-left: 0px;
   }
+}
+
+
+/* Ghost 2.0 Compatability */
+.kg-width-wide {
+  width:85%;
+}
+.kg-width-full {
+  width:100%;
+}
+
+/*
+  For Gallerys
+*/
+.kg-gallery-container {
+
+}
+.kg-gallery-row {
+
+}
+.kg-gallery-image {
+
 }
 
 /*# sourceMappingURL=global.css.map */
