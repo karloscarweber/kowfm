@@ -2,7 +2,7 @@
 layout: post
 title: "Kona"
 description: "Kona is a small, fast, web language."
-date: 2025-12-25 00:10:00 0600
+date: 2026-12-25 00:10:00 0600
 categories: html css javascript kona programming-languages
 excerpt: ""
 image: /assets/blog/kona/kona_badge.jpg

@@ -1,0 +1,97 @@
+/* :root {
+    --fluid-28-56: clamp(1.75rem, 0.6282rem + 4.7863vw, 3.5rem);
+    --fluid-22-36: clamp(1.375rem, 0.8141rem + 2.3932vw, 2.25rem);
+    --fluid-18-24: clamp(1.125rem, 0.8846rem + 1.0256vw, 1.5rem);
+    --fluid-14-18: clamp(0.875rem, 0.7147rem + 0.6838vw, 1.125rem);
+    --fluid-12-14: clamp(0.75rem, 0.6699rem + 0.3419vw, 0.875rem);
+    --fluid-10-12: clamp(0.625rem, 0.5449rem + 0.3419vw, 0.75rem);
+} */
+
+/* @link https://utopia.fyi/clamp/calculator?a=375,960,10—12|12—14|14—18|18—24|22—36|28—56 */
+:root {
+
+    --f4: clamp(1.75rem, 0.6282rem + 4.7863vw, 3.5rem); /* --fluid-28-56 */
+    --f3: clamp(1.375rem, 0.8141rem + 2.3932vw, 2.25rem); /* --fluid-22-36 */
+    --f2: clamp(1.125rem, 0.8846rem + 1.0256vw, 1.5rem); /* --fluid-18-24 */
+    --f1: clamp(0.875rem, 0.7147rem + 0.6838vw, 1.125rem); /* --fluid-14-18 */
+    --f0: clamp(0.75rem, 0.6699rem + 0.3419vw, 0.875rem); /* --fluid-12-14 */
+    --f-1: clamp(0.625rem, 0.5449rem + 0.3419vw, 0.75rem); /* --fluid-10-12 */
+}
+
+/* Typography */
+/* General Sans typeface */
+
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 700.0;
+*
+* available axes:
+'wght' (range from 200.0 to 700.0
+*/
+@font-face {
+  font-family: 'GeneralSans-Variable';
+  src: url('/assets/fonts/generalsans/GeneralSans-Variable.woff2') format('woff2'),
+       url('/assets/fonts/generalsans/GeneralSans-Variable.woff') format('woff'),
+       url('/assets/fonts/generalsans/GeneralSans-Variable.ttf') format('truetype');
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
+}
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 700.0;
+*
+* available axes:
+'wght' (range from 200.0 to 700.0
+*/
+@font-face {
+  font-family: 'GeneralSans-VariableItalic';
+  src: url('/assets/fonts/generalsans/GeneralSans-VariableItalic.woff2') format('woff2'),
+       url('/assets/fonts/generalsans/GeneralSans-VariableItalic.woff') format('woff'),
+       url('/assets/fonts/generalsans/GeneralSans-VariableItalic.ttf') format('truetype');
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: italic;
+}
+
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 700.0;
+*
+* available axes:
+'wght' (range from 300.0 to 600.0
+*/
+@font-face {
+  font-family: 'JetBrainsMono-variable';
+  src: url('/assets/fonts/jetbrainsmono/JetBrainsMono-variable.ttf') format('truetype');
+  font-weight: 300 600;
+  font-display: swap;
+  font-style: normal;
+}
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 600.0;
+*
+* available axes:
+'wght' (range from 300.0 to 600.0
+*/
+@font-face {
+  font-family: 'JetBrainsMono-Italic-variable';
+  src: url('/assets/fonts/jetbrainsmono/JetBrainsMono-Italic-variable.ttf') format('truetype');
+  font-weight: 300 600;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'mdio';
+  src: url('/assets/fonts/mdio/MDIO-Medium.woff2') format('woff2'),
+       url('/assets/fonts/mdio/MDIO-Medium.woff') format('woff');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}

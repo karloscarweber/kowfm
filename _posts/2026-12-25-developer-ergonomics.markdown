@@ -2,7 +2,7 @@
 layout: post
 title: "Developer Ergonomics"
 description: "Let's start thinking about the effect our tools have on us. How it changes what we produce, or precludes us from producing certain stuff."
-date: 2025-12-25 00:26:00 0600
+date: 2026-12-25 00:26:00 0600
 categories: blog developer-ergonomics html css kona wren react
 excerpt: "For years I've been pursuing better tools and better tooling, believing that perhaps I can make myself more productive and happier. But maybe the answer is making myself comfortable?"
 image: /assets/images/sampleImage1.jpg
@@ -59,4 +59,3 @@ The point of all this tech is to work less and live more, so why are our tools m
 		<p>These are some interesting captions that I add to annotated website thingys.</p>
 	</captions>
 </gallery>
-

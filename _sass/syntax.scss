@@ -38,7 +38,7 @@
 	--hl-generic-subheading: #7E7E7E;
 	--hl-generic-deleted: #f92672;
 	--hl-generic-inserted: #31A40A;
-		
+
 	pre { background-color: var(--hl-bg); }
 	.hll { background-color: var(--hl-bg); }
 	.c { color: var(--hl-comment) } /* Comment */
@@ -110,7 +110,7 @@ figure.whatever {
 	background-color: #F8F8F8;
 	border: 2px solid black;
 	pre { border:none;}
-	
+
 	// --clr-unformatted:#1D1F1E;
 	// --clr-keyword:    #FF3B2F;
 	// --clr-punctuation:#3260FF;
@@ -120,12 +120,29 @@ figure.whatever {
 
 // Bash output
 .language-bash .highlight {
-	pre { background: rgb(201, 201, 201); }
-	& * { color: rgb(40, 39, 39) !important; }
+	pre { background: rgb(40, 39, 39); }
+	& * { color: rgb(221, 221, 221) !important; }
 }
 
 
 // try something dark
 .highlight {
 	--hl-bg: #F8F8F8;
+}
+
+div.highlight {
+  display:flex;
+  gap: 5px;
+  position:relative;
+  padding:5px;
+  width: 100%; /* 800px */
+  height: 100%; /* 288px */
+  background-image: linear-gradient(180deg, #2C67F6 1%, #FF62CE 100%);
+  border-radius: 14px;
+  margin-bottom:1rem;
+}
+pre.highlight {
+  background: #ECECEC;
+  border-radius: 9px;
+  margin-bottom:0rem;
 }

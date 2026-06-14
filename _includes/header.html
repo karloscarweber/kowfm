@@ -1,17 +1,19 @@
 <header>
-  <a class="knight" href="/"> <img src="/assets/images/green-knight-60x60.png" width="32px" height="32px" /> </a>
+  <!--<a class="knight" href="/"> <img src="/assets/images/green-knight-60x60.png" width="32px" height="32px" /> </a>-->
+
+  <p>Hi I'm Karl. I Design and develop websites. I make little apps. I write about technology stuff and art stuff and sociology stuff and politics and economics. Things I'm working on: <a href="#">Pockit</a>: People sized websites for people people, The Ruby micro web framework: <a href="#">Camping</a>, Replacing Javascript with <a href="#">Rook</a> and <a href="#">Kona</a>, a newsletter for fun: <a href="#">SPAM</a>, and really industrial looking art/design/branding stuff. Contact <a href="mailto:me@kow.fm">me@kow.fm<a href="#">. links: <a href="/">blog</a>, <a href="https://konascript.com">kona</a>, <a href="https://rooklang.org">rook</a>, <a href="/books">books</a>, <a href="https://buttondown.com/capsule">spam</a>, <a href="http://capsule.engineering">capsule engineering</a>, <a href="https://bsky.app/profile/kow.fm"></a>bsky</a>, <a href="https://ruby.social/@Kowfm">mastodon</a>.</p>
 
   {%- assign default_paths = site.pages | map: "path" -%}
   {%- assign page_paths = site.header_pages | default: default_paths -%}
   {% assign years = site.posts
     | group_by_exp: "post", "post.date | date: '%Y'"
   %}
-  
-  <links>
+
+  <!--<links>
     <ul>
       <li><a href="/books">books.</a></li>
       <li><a href="https://konascript.org">kona.</a></li>
       <li><a href="/blog">blog.</a></li>
     </ul>
-  </links>
+  </links>-->
 </header>

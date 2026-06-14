@@ -1,12 +1,9 @@
-# Kow.fm V 25
+# kow.fm
+v 27
 
-The 25th version of the greatest blog in the world.
+The 27th version of the greatest blog in the world.
 
-This is... kinda based on a jekyll theme. I stripped all the styles and almost all the markup. So it started pretty barebones.
-
-## Goals
-
-Make a blog that won't get deleted if I don't pay a hosting bill. Have something that's very easy to update. Be extremely minimal with markup and design. My hope is that by removing so much that is *"custom"* or *"fancy"*, I can get to the core of what a blog experience requires.
+## Build it?
 
 ## Run it
 
