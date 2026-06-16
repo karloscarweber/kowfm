@@ -15,10 +15,10 @@ layout_class: home
       </picture>
     {%- endif -%}
   </promo> -->
-  
+
   {{ content }}
-  
-    
+
+
   {%- if page.image -%}
     <picture>
       <img class="{%- if page.image_class -%} {{ page.image_class }} {%- else -%} normal {%- endif -%}" alt="{{ page.image_alt }}" src="{{ page.image }}" >
@@ -28,12 +28,13 @@ layout_class: home
       <p></p>
     </picture>
   {%- endif -%}
-  
-    
+
+    <p class="smalltext">These are some projects and logos and little images and things that you might find interesting to look at:</p>
+
     {% include recent.html %}
-    
-    <columnsheader hiddenlinks twocolumns> <h4>Links</h4> </columnsheader>
-    <ul columns="two">
+
+    <p class="smalltext">Links</p>
+    <ul>
       <li><a href="mailto:me@kow.fm">me@kow.fm</a></li>
       <li><a href="https://ruby.social/@kowfm">Mastodon</a></li>
       <li><a href="https://bsky.app/profile/kow.fm">Blue Sky</a></li>
@@ -42,15 +43,14 @@ layout_class: home
       <li><a href="https://dribbble.com/kowfm">Dribbble</a></li>
       <li>🎙<a href="https://www.twitch.tv/kowfm">Grilled Cheese</a></li>
     </ul>
-    
-    <columnsheader hiddenlinks twocolumns> <h4>Interviews</h4> </columnsheader>
-    <ul columns="two">
+
+    <p class="smalltext">Interviews</p>
+    <ul>
       <li><a href="https://shows.acast.com/dead-code/episodes/lets-go-camping-with-karl-oscar-weber">Dead Code</a></li>
       <li><a href="https://www.fullstackruby.dev/podcast/12/">Full Stack Ruby</a></li>
     </ul>
-    
-    <columnsheader hiddenlinks twocolumns> <h4>Talks</h4> </columnsheader>
-    <ul columns="two">
+
+    <p class="smalltext">Talks</p>
+    <ul>
       <li><a href="https://www.rubyvideo.dev/talks/mvc-ruby-in-less-than-5k-the-wonder-of-camping">MVC Ruby in <5k: The wonder of Camping</a></li>
     </ul>
-    

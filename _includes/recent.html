@@ -1,6 +1,6 @@
-<columnsheader hiddenlinks twocolumns> <h4>Recent Articles</h4> </columnsheader>
-<ul columns="one">
+<p class="smalltext">Recent blog posts on my internet blog:</p>
+<p class="smalltext">
 	{% for post in site.posts limit: 4 %}
-		<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+		<a href="{{ post.url }}">{{ post.title }}</a><br>
 	{% endfor %}
-</ul>
+</p>
