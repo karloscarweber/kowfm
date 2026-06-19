@@ -323,17 +323,34 @@ flex {
   flex-direction: row;
   flex-wrap:wrap;
   justify-content:flex-start;
+
+  &[gap20] {
+    gap:20px;
+  }
+
+  &[align-center] {
+    align-items: center;
+  }
+
 }
 
 .booksbox {
-  border: 2px solid black;
+  border: 2px solid #cdc1c1;
   margin-top: -2px;
   margin-bottom: 2rem;
+  border-radius: 1em;
+  padding: var(--space-s);
+  padding-top: var(--space-m);
+  padding-bottom: var(--space-m);
+  gap:var(--space-s);
+  justify-content: space-around;
+
   a {
     position:relative;
-    padding: var(--space-xs);
+    /* padding:var(--space-s); */
+
     img {
-      box-shadow: 5px 5px 11px 0 rgba(88,88,88,0.50);
+      box-shadow: 5px 5px 11px 0 rgba(12,88,88,0.50);
     }
   }
 }
@@ -372,7 +389,6 @@ main {
   max-width: 100vw;
 
   header, article { margin: 0 auto; }
-  article { margin-top: 4rem; }
 
   padding:var(--space-s);
 }

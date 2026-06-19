@@ -2,28 +2,31 @@
 layout: default
 layout_class: home
 ---
- 
+
 <article>
-	<h1 itemprop="name headline">{{ page.list_title | default: "BLOG" }}</h1>
-	
+	<!--<h1 itemprop="name headline">{{ page.list_title | default: "BLOG" }}</h1>-->
+
 	<content>
-		
+
 		{% for post in site.posts %}
 			{% assign currentdate = post.date | date: "%Y" %}
 			{% if currentdate != date %}
 				{% unless forloop.first %}</ul>{% endunless %}
-				<columnsheader hiddenlinks twocolumns id="y{{post.date | date: "%Y"}}"><h4>{{ currentdate }}</h4> </columnsheader>
-				<ul>
+				<p id="y{{post.date | date: "%Y"}}">{{ currentdate }}</p>
+				<p class="smalltext">
 				{% assign date = currentdate %}
 			{% endif %}
-				<li><a href="{{ post.url }}">{{ post.title }}</a></li>
-			{% if forloop.last %}</ul>{% endif %}
+				<a href="{{ post.url }}">{{ post.title }}</a><br />
+			{% if forloop.last %}</p>{% endif %}
 		{% endfor %}
-	
+
+
 		{%- if site.posts.size > 0 -%}
-			<p>subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+      <br />
+		  <br />
+			<p class="smalltext">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
 		{%- endif -%}
-	
+
 	</content>
 
 </article>

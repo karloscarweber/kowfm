@@ -1,8 +1,11 @@
 ---
-layout: post
+layout: page
 layout_class: home
 ---
-  <!-- <promo style="display:none;">
+
+  <p class="smalltext">Hi I'm Karl. I Design and develop websites. I make little apps. I write about technology stuff and art stuff and sociology stuff and politics and economics. Things I'm working on: The Ruby micro web framework: <a href="https://github.com/camping/camping">Camping</a>, Replacing Javascript with <a style="cursor:pointer;" title="coming soon">Rook</a> and <a href="https://konascript.com">Kona</a>, and <a href="https://buttondown.com/capsule">SPAM</a>, a newsletter for fun. Contact <a href="mailto:me@kow.fm">me@kow.fm</a>. links: <a href="/blog">blog</a>, <a href="/books">books I'm reading</a>, <a href="http://capsule.engineering">capsule engineering</a>, <a href="https://bsky.app/profile/kow.fm">follow me on blue sky</a>, <a href="https://ruby.social/@Kowfm">follow me on mastodon</a>.</p>
+
+<!-- <promo style="display:none;">
     {%- if page.image -%}
       <picture>
         {%- if page.image_link -%}
@@ -16,41 +19,57 @@ layout_class: home
     {%- endif -%}
   </promo> -->
 
-  {{ content }}
-
-
-  {%- if page.image -%}
-    <picture>
-      <img class="{%- if page.image_class -%} {{ page.image_class }} {%- else -%} normal {%- endif -%}" alt="{{ page.image_alt }}" src="{{ page.image }}" >
-      {%- if page.image_alt -%}
-      <p>{{page.image_alt}}</p>
-      {%- endif -%}
-      <p></p>
-    </picture>
+{{ content }} {%- if page.image -%}
+<picture>
+  <img
+    class="{%- if page.image_class -%} {{ page.image_class }} {%- else -%} normal {%- endif -%}"
+    alt="{{ page.image_alt }}"
+    src="{{ page.image }}"
+  />
+  {%- if page.image_alt -%}
+  <p>{{page.image_alt}}</p>
   {%- endif -%}
+  <p></p>
+</picture>
+{%- endif -%}
 
-    <p class="smalltext">These are some projects and logos and little images and things that you might find interesting to look at:</p>
+<p class="smalltext">
+  These are some projects and logos and little images and things that you might
+  find interesting to look at:
+</p>
 
-    {% include recent.html %}
+<flex align-center gap20>
+  <img src="/assets/images/homepage/green-knight-60x60.png" width="60px" height="60px" />
+  <img src="/assets/images/homepage/kowsig.png" width="111px" height="79px" />
+  <a href="https://buttondown.com/capsule/"><img src="/assets/images/homepage/spamlogo.png" width="157px" height="80px" /></a>
+  <img src="/assets/images/homepage/capsuleengineeringlogo.png" width="152px" height="52px" />
+  <img src="/assets/images/homepage/tomologo.png" width="62px" height="62px" />
+</flex>
 
-    <p class="smalltext">Links</p>
-    <ul>
-      <li><a href="mailto:me@kow.fm">me@kow.fm</a></li>
-      <li><a href="https://ruby.social/@kowfm">Mastodon</a></li>
-      <li><a href="https://bsky.app/profile/kow.fm">Blue Sky</a></li>
-      <li><a href="https://linkedin.com/in/kowfm">LinkedIn</a></li>
-      <li><a href="https://buttondown.email/capsule">SPAM</a></li>
-      <li><a href="https://dribbble.com/kowfm">Dribbble</a></li>
-      <li>🎙<a href="https://www.twitch.tv/kowfm">Grilled Cheese</a></li>
-    </ul>
+<br /><br /><br />
 
-    <p class="smalltext">Interviews</p>
-    <ul>
-      <li><a href="https://shows.acast.com/dead-code/episodes/lets-go-camping-with-karl-oscar-weber">Dead Code</a></li>
-      <li><a href="https://www.fullstackruby.dev/podcast/12/">Full Stack Ruby</a></li>
-    </ul>
+{% include recent.html %}
+<br />
 
-    <p class="smalltext">Talks</p>
-    <ul>
-      <li><a href="https://www.rubyvideo.dev/talks/mvc-ruby-in-less-than-5k-the-wonder-of-camping">MVC Ruby in <5k: The wonder of Camping</a></li>
-    </ul>
+<p class="smalltext">Links</p>
+<p class="smalltext">
+  <a href="mailto:me@kow.fm">me@kow.fm</a><br />
+  <a href="https://ruby.social/@kowfm">Mastodon</a><br />
+  <a href="https://bsky.app/profile/kow.fm">Blue Sky</a><br />
+  <a href="https://linkedin.com/in/kowfm">LinkedIn</a><br />
+  <a href="https://buttondown.email/capsule">SPAM</a><br />
+  <a href="https://dribbble.com/kowfm">Dribbble</a><br />
+  <a href="https://hypercart.org">HyperCart</a><br />
+</p>
+<br />
+
+<p class="smalltext">Interviews</p>
+<p class="smalltext">
+  <a href="https://shows.acast.com/dead-code/episodes/lets-go-camping-with-karl-oscar-weber" >Dead Code</a><br />
+</p>
+<br />
+
+<p class="smalltext">Talks</p>
+<p class="smalltext">
+  <a href="https://www.rubyvideo.dev/talks/mvc-ruby-in-less-than-5k-the-wonder-of-camping" >RubyConf 20204 - MVC Ruby in <5k: The wonder of Camping</a><br />
+</p>
