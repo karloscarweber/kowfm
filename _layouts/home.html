@@ -2,74 +2,49 @@
 layout: page
 layout_class: home
 ---
+<h1 big>Hi Friends!</h1>
 
-  <p class="smalltext">Hi I'm Karl. I Design and develop websites. I make little apps. I write about technology stuff and art stuff and sociology stuff and politics and economics. Things I'm working on: The Ruby micro web framework: <a href="https://github.com/camping/camping">Camping</a>, Replacing Javascript with <a style="cursor:pointer;" title="coming soon">Rook</a> and <a href="https://konascript.com">Kona</a>, and <a href="https://buttondown.com/capsule">SPAM</a>, a newsletter for fun. Contact <a href="mailto:me@kow.fm">me@kow.fm</a>. links: <a href="/blog">blog</a>, <a href="/books">books I'm reading</a>, <a href="http://capsule.engineering">capsule engineering</a>, <a href="https://bsky.app/profile/kow.fm">follow me on blue sky</a>, <a href="https://ruby.social/@Kowfm">follow me on mastodon</a>.</p>
+<p>I’m Karl, a Graphic and Web designer, living in Salt Lake City, Utah, United States of America, North America, Earth, Sol System, Milky Way Galaxy, Virgo galaxy cluster.</p>
+<p>I run a Graphic Design and web studio named <a href="https://capsule.engineering">Capsule Engineering</a>.</p>
+<br>
+<h3>Features</h3>
 
-<!-- <promo style="display:none;">
-    {%- if page.image -%}
-      <picture>
-        {%- if page.image_link -%}
-        <a href="{{ page.image_link }}">
-          <img alt="{{ page.image_alt }}" src="{{ page.image }}" >
-        </a>
-        {%- else -%}
-          <img alt="{{ page.image_alt }}" src="{{ page.image }}" >
-        {%- endif -%}
-      </picture>
-    {%- endif -%}
-  </promo> -->
+<div features>
+  <!-- <a href="#"><img src="/assets/images/homepage/sample005.png" /><span>New</span></a>
+  <a href="#"><img src="/assets/images/homepage/sample003.png" /></a>
+  <a href="#"><img src="/assets/images/homepage/sample006.png" /></a>
+  <a href="#"><img src="/assets/images/homepage/sample002.png" /></a> -->
+  
+  <a href="/capsule-engineering"><img src="/assets/images/2026/november/capsule-header-small.png" /><span top>New</span></a>
+  <!-- <a href="#"><img src="/assets/images/homepage/sample004.png" /></a> -->
+</div>
 
-{{ content }} {%- if page.image -%}
-<picture>
-  <img
-    class="{%- if page.image_class -%} {{ page.image_class }} {%- else -%} normal {%- endif -%}"
-    alt="{{ page.image_alt }}"
-    src="{{ page.image }}"
-  />
-  {%- if page.image_alt -%}
-  <p>{{page.image_alt}}</p>
-  {%- endif -%}
-  <p></p>
-</picture>
-{%- endif -%}
-
-<p class="smalltext">
-  These are some projects and logos and little images and things that you might
-  find interesting to look at:
-</p>
-
-<flex align-center gap20>
-  <img src="/assets/images/homepage/green-knight-60x60.png" width="60px" height="60px" />
-  <img src="/assets/images/homepage/kowsig.png" width="111px" height="79px" />
-  <a href="https://buttondown.com/capsule/"><img src="/assets/images/homepage/spamlogo.png" width="157px" height="80px" /></a>
-  <img src="/assets/images/homepage/capsuleengineeringlogo.png" width="152px" height="52px" />
-  <img src="/assets/images/homepage/tomologo.png" width="62px" height="62px" />
-</flex>
-
-<br /><br /><br />
+<div columns>
+  <div>
+    <h3>Projects</h3>
+    <p class="mb0"><a href="https://github.com/camping/camping">Camping</a><br><a href="#">Kona</a><br><a href="/spam">SPAM Mail</a><br><a href="https://hypercart.org">HyperCart</a></p>
+  </div>
+  <div>
+    <h3>Links</h3>
+    <p class="mb0"><a href="https://capsule.engineering">capsule engineering</a><br><a href="https://bsky.app/profile/kow.fm">blue sky</a><br>
+    <a href="https://ruby.social/@kowfm">mastodon</a><br><a href="https://dribbble.com/kowfm">dribbble</a><br><a href="https://linkedin.com/in/kowfm">linked in</a></p>
+  </div>
+  <div>
+    <h3>Contact</h3>
+    <p class="mb0"><a href="mailto:me@kow.fm">me@kow.fm</a></p>
+  </div>
+  <div>
+    <h3>Newsletter</h3>
+    <p class="mb0"><a href="https://buttondown.email/capsule">SPAM News</a></p>
+  </div>
+  <div>
+    <h3>Interviews</h3>
+    <p class="mb0"><a href="https://shows.acast.com/dead-code/episodes/lets-go-camping-with-karl-oscar-weber" >Dead Code</a></p>
+  </div>
+  <div>
+    <h3>Talks</h3>
+    <p class="mb0"><a href="https://www.rubyvideo.dev/talks/mvc-ruby-in-less-than-5k-the-wonder-of-camping" >RubyConf 20204 - MVC Ruby in <5k: The wonder of Camping</a></p>
+  </div>
+</div>
 
 {% include recent.html %}
-<br />
-
-<p class="smalltext">Links</p>
-<p class="smalltext">
-  <a href="mailto:me@kow.fm">me@kow.fm</a><br />
-  <a href="https://ruby.social/@kowfm">Mastodon</a><br />
-  <a href="https://bsky.app/profile/kow.fm">Blue Sky</a><br />
-  <a href="https://linkedin.com/in/kowfm">LinkedIn</a><br />
-  <a href="https://buttondown.email/capsule">SPAM</a><br />
-  <a href="https://dribbble.com/kowfm">Dribbble</a><br />
-  <a href="https://hypercart.org">HyperCart</a><br />
-</p>
-<br />
-
-<p class="smalltext">Interviews</p>
-<p class="smalltext">
-  <a href="https://shows.acast.com/dead-code/episodes/lets-go-camping-with-karl-oscar-weber" >Dead Code</a><br />
-</p>
-<br />
-
-<p class="smalltext">Talks</p>
-<p class="smalltext">
-  <a href="https://www.rubyvideo.dev/talks/mvc-ruby-in-less-than-5k-the-wonder-of-camping" >RubyConf 20204 - MVC Ruby in <5k: The wonder of Camping</a><br />
-</p>

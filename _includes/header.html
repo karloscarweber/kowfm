@@ -1,19 +1,15 @@
 <header>
-  <!--<a class="knight" href="/"> <img src="/assets/images/green-knight-60x60.png" width="32px" height="32px" /> </a>-->
 
-  <p style="text-align:center"><a href="/">kow.fm</a></p>
+  <a href="/" class="kowlogo">
+    {% include kowlogo.html %}
+  </a>
+  <a href="/spam">
+    <img src="/assets/images/SPAM.svg" />
+  </a>
 
   {%- assign default_paths = site.pages | map: "path" -%}
   {%- assign page_paths = site.header_pages | default: default_paths -%}
   {% assign years = site.posts
     | group_by_exp: "post", "post.date | date: '%Y'"
   %}
-
-  <!--<links>
-    <ul>
-      <li><a href="/books">books.</a></li>
-      <li><a href="https://konascript.org">kona.</a></li>
-      <li><a href="/blog">blog.</a></li>
-    </ul>
-  </links>-->
 </header>

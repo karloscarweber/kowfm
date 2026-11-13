@@ -5,10 +5,14 @@ The 27th version of the greatest blog in the world.
 
 ## Build it?
 
+```bash
+bundle exec jekyll build
+```
+
 ## Run it
 
 ```bash
-jekyll serve
+bundle exec jekyll serve
 ```
 
 ### Customize navigation links

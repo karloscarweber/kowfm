@@ -5,7 +5,7 @@ description: "Karl talks about the intense burnout and failure he's been experie
 date:   2024-10-05 00:26:00 -0600
 categories: blog programming-languages kona wren
 excerpt: "I give up on a lot of stuff to take a break, catch my breath, and rest up a little. I'm tired."
-image: /assets/blog/giving-up/gingin_up.jpg
+image: /assets/blog/giving-up/giving_up.jpg
 image_alt: A bike, against a dark wall. It's a great bike in great shape. The metaphorical idea is that they ride aint there because they gave up. Just like me. Gonna take a rest.
 author: Karl Oscar Weber
 ---
